@@ -1,0 +1,625 @@
+[
+  {
+    "id": "47953c55-4f18-4d9b-b41f-9a0f72edd3ea",
+    "name": "пол.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3869061,
+    "sha256": "9e63eaee9ebf1a6c8194274ae1270b2466b7020e1d5f58bf364507b8f470bcc2",
+    "storageKey": "resources/47953c55-4f18-4d9b-b41f-9a0f72edd3ea",
+    "file": "assets/47953c55-4f18-4d9b-b41f-9a0f72edd3ea.png"
+  },
+  {
+    "id": "38cecc81-cc15-40aa-b1d5-8323d8dc6327",
+    "name": "ouverture1.mp3",
+    "kind": "audio",
+    "mime": "audio/mpeg",
+    "bytes": 1161089,
+    "sha256": "e56be9af2ca64b9652ed874c654efff9de0a445f2021bb0451709aaf6ffe13c2",
+    "storageKey": "resources/38cecc81-cc15-40aa-b1d5-8323d8dc6327",
+    "file": "assets/38cecc81-cc15-40aa-b1d5-8323d8dc6327.mp3"
+  },
+  {
+    "id": "d038b11e-92ef-453a-ae16-5cab300f66dd",
+    "name": "Bottle Break (online-video-cutter.com).mp3",
+    "kind": "audio",
+    "mime": "audio/mpeg",
+    "bytes": 43928,
+    "sha256": "a17afe5ef3220568458100c06e1a6a3b363d4f52f604f79925681802273bc049",
+    "storageKey": "resources/d038b11e-92ef-453a-ae16-5cab300f66dd",
+    "file": "assets/d038b11e-92ef-453a-ae16-5cab300f66dd.mp3"
+  },
+  {
+    "id": "f68cf2c6-781d-4d80-bcd3-61790d48c292",
+    "name": "Графитовый эскиз металлической двери.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3920309,
+    "sha256": "407a643fd0a185d5e34575766d855d3c26319d37111ffc2c44c9dd9b3cd771fb",
+    "storageKey": "resources/f68cf2c6-781d-4d80-bcd3-61790d48c292",
+    "file": "assets/f68cf2c6-781d-4d80-bcd3-61790d48c292.png"
+  },
+  {
+    "id": "4957f663-0413-48d9-93ee-d2175d46ecd6",
+    "name": "ouverture2-1.mp3",
+    "kind": "audio",
+    "mime": "audio/mpeg",
+    "bytes": 2720913,
+    "sha256": "c75817550d72f61096de59521705cf77c19f0a9bd2403c185aa794269c11e1ac",
+    "storageKey": "resources/4957f663-0413-48d9-93ee-d2175d46ecd6",
+    "file": "assets/4957f663-0413-48d9-93ee-d2175d46ecd6.mp3"
+  },
+  {
+    "id": "d7d16666-3a24-4e6a-8169-75bc5d25bec5",
+    "name": "текстура стены.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3572104,
+    "sha256": "9f5408f1a882b2d88a51ccaaaf608b70cb77fb07cea3b32ae15da2ba1e0ea494",
+    "storageKey": "resources/d7d16666-3a24-4e6a-8169-75bc5d25bec5",
+    "file": "assets/d7d16666-3a24-4e6a-8169-75bc5d25bec5.png"
+  },
+  {
+    "id": "2d604749-4360-49b5-99a9-4cfe03216650",
+    "name": "потолок.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3733165,
+    "sha256": "36d5d99b0aee098e262d94ba57ba482ccf2adcd68a1ac8df7454605ff948e9e6",
+    "storageKey": "resources/2d604749-4360-49b5-99a9-4cfe03216650",
+    "file": "assets/2d604749-4360-49b5-99a9-4cfe03216650.png"
+  },
+  {
+    "id": "79c55c41-ed90-431e-9f67-697a2e3218ee",
+    "name": "кафель.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3717013,
+    "sha256": "d0ef16376a4e8a79fb749472e72781ec1327cead197636ef86c8c9f08eaf6ea5",
+    "storageKey": "resources/79c55c41-ed90-431e-9f67-697a2e3218ee",
+    "file": "assets/79c55c41-ed90-431e-9f67-697a2e3218ee.png"
+  },
+  {
+    "id": "3136c164-9fd9-4b12-9d28-529c266065cc",
+    "name": "кровать.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1739202,
+    "sha256": "3798885b77de6cce4ee2bce6af4adcb72d0a5afb86b50da7d8fa221e4ca2f0d0",
+    "storageKey": "resources/3136c164-9fd9-4b12-9d28-529c266065cc",
+    "file": "assets/3136c164-9fd9-4b12-9d28-529c266065cc.png"
+  },
+  {
+    "id": "8d267c8d-0e0a-4512-a4f5-a2c1fd53464c",
+    "name": "стул.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1316755,
+    "sha256": "0adb1b07c293375a536247da2d949e8715cc4c9fb1736c5ed1cbc0e1c0aab889",
+    "storageKey": "resources/8d267c8d-0e0a-4512-a4f5-a2c1fd53464c",
+    "file": "assets/8d267c8d-0e0a-4512-a4f5-a2c1fd53464c.png"
+  },
+  {
+    "id": "f6840a4c-4149-417c-a082-6ba6b53051e9",
+    "name": "Раковина.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2570233,
+    "sha256": "d4ace381242b64515e6a3b95338d12de5a806a1420c29a8d04a2bd719f0d00f6",
+    "storageKey": "resources/f6840a4c-4149-417c-a082-6ba6b53051e9",
+    "file": "assets/f6840a4c-4149-417c-a082-6ba6b53051e9.png"
+  },
+  {
+    "id": "cad3fa92-59ce-45ae-967e-4e2517d3c7b9",
+    "name": "бумага_мусор.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3075297,
+    "sha256": "8196da863eb5462d78819b34da4f88dd489a19baf23519bd6cfb70732d8bfa11",
+    "storageKey": "resources/cad3fa92-59ce-45ae-967e-4e2517d3c7b9",
+    "file": "assets/cad3fa92-59ce-45ae-967e-4e2517d3c7b9.png"
+  },
+  {
+    "id": "3fd1b62d-bb9e-4354-ad86-f3b87ceacd3a",
+    "name": "бутылка.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1965243,
+    "sha256": "5044b7d304dbb0002392800c2508257a4dede029edcb5397fa322d80dd1d4ed5",
+    "storageKey": "resources/3fd1b62d-bb9e-4354-ad86-f3b87ceacd3a",
+    "file": "assets/3fd1b62d-bb9e-4354-ad86-f3b87ceacd3a.png"
+  },
+  {
+    "id": "40dc642c-ee3d-47ab-9e2a-28860809c11b",
+    "name": "рубашка.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2100803,
+    "sha256": "52feda2a1e47b467f8d24de5c383ea41cc9b696ac7d9c7a0a125b13a7a7614d4",
+    "storageKey": "resources/40dc642c-ee3d-47ab-9e2a-28860809c11b",
+    "file": "assets/40dc642c-ee3d-47ab-9e2a-28860809c11b.png"
+  },
+  {
+    "id": "21bf9923-0b2e-4cfd-91ed-c85f863c63e4",
+    "name": "мусоропровод.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2026714,
+    "sha256": "ff8751981f36e86303a329890ea81e556d7b3175143403212e9c094ea4977098",
+    "storageKey": "resources/21bf9923-0b2e-4cfd-91ed-c85f863c63e4",
+    "file": "assets/21bf9923-0b2e-4cfd-91ed-c85f863c63e4.png"
+  },
+  {
+    "id": "77125a25-b788-4adf-90a7-cea5d4b9257c",
+    "name": "бутылка_целая.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2097528,
+    "sha256": "5566280b4fe1c6aae9670951edc1acf64ae2721d237396cf6373dc958f3fc708",
+    "storageKey": "resources/77125a25-b788-4adf-90a7-cea5d4b9257c",
+    "file": "assets/77125a25-b788-4adf-90a7-cea5d4b9257c.png"
+  },
+  {
+    "id": "903ea75a-0f2c-464a-a0c4-0d43d84f9907",
+    "name": "стол.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1681169,
+    "sha256": "c333c69637b38a1d7c922272d50b47dcff72fcedc015d6393bc82a66b5dc4eab",
+    "storageKey": "resources/903ea75a-0f2c-464a-a0c4-0d43d84f9907",
+    "file": "assets/903ea75a-0f2c-464a-a0c4-0d43d84f9907.png"
+  },
+  {
+    "id": "9601199c-46ee-4d2a-8b18-ffb9fc8aa58b",
+    "name": "стол_бумага.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1562880,
+    "sha256": "1e8ccbd09c5c7b69f558bec7fcada5d5df4962245cf24da19120cac150a08784",
+    "storageKey": "resources/9601199c-46ee-4d2a-8b18-ffb9fc8aa58b",
+    "file": "assets/9601199c-46ee-4d2a-8b18-ffb9fc8aa58b.png"
+  },
+  {
+    "id": "30f3ba51-246e-4f8c-9058-0c3a1b06cbe3",
+    "name": "шкаф.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2788574,
+    "sha256": "4457cb4439fe5b8b06eb43415b74f20fd51a46b7f0da0cb58a6df1a236f6f872",
+    "storageKey": "resources/30f3ba51-246e-4f8c-9058-0c3a1b06cbe3",
+    "file": "assets/30f3ba51-246e-4f8c-9058-0c3a1b06cbe3.png"
+  },
+  {
+    "id": "150ccd10-bcbe-467a-bca4-c87805eddcb3",
+    "name": "туалет.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1593815,
+    "sha256": "7965441241e3880c5282e457add732e830ca7a83a63b06d526c6b3e3e8f95b2f",
+    "storageKey": "resources/150ccd10-bcbe-467a-bca4-c87805eddcb3",
+    "file": "assets/150ccd10-bcbe-467a-bca4-c87805eddcb3.png"
+  },
+  {
+    "id": "fb056ffc-1183-48e0-90d6-d63d4ffd0471",
+    "name": "раковина_ванная.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2777873,
+    "sha256": "246fb660a953ad99db941bdf144c7f934139206598d56a496dde8a57f111961d",
+    "storageKey": "resources/fb056ffc-1183-48e0-90d6-d63d4ffd0471",
+    "file": "assets/fb056ffc-1183-48e0-90d6-d63d4ffd0471.png"
+  },
+  {
+    "id": "eeafcc8b-11fc-4b27-9cf7-67b501edc20e",
+    "name": "плита.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3450319,
+    "sha256": "54a264f8bd89d4e863c9e4f4b7f93b61bcfc90c3678b52e8064732465d877648",
+    "storageKey": "resources/eeafcc8b-11fc-4b27-9cf7-67b501edc20e",
+    "file": "assets/eeafcc8b-11fc-4b27-9cf7-67b501edc20e.png"
+  },
+  {
+    "id": "edac4cac-0303-46e2-8a83-ab159968874a",
+    "name": "шкафчик.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2936724,
+    "sha256": "fd6e570c3c834d0781dcf5c2b741a1e939b99e05286b617f7ece8ac117b0cd7f",
+    "storageKey": "resources/edac4cac-0303-46e2-8a83-ab159968874a",
+    "file": "assets/edac4cac-0303-46e2-8a83-ab159968874a.png"
+  },
+  {
+    "id": "535a6c96-dbe6-4a48-bb08-506c96db498f",
+    "name": "ванна.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1924564,
+    "sha256": "631b08301b8326925c664d267f0a8a42de6ed98af40568ba6adf7baaca7524e2",
+    "storageKey": "resources/535a6c96-dbe6-4a48-bb08-506c96db498f",
+    "file": "assets/535a6c96-dbe6-4a48-bb08-506c96db498f.png"
+  },
+  {
+    "id": "b13b1141-42db-4e1f-9adf-e9884936b0e5",
+    "name": "клавиши.wav",
+    "kind": "audio",
+    "mime": "audio/wav",
+    "bytes": 176444,
+    "sha256": "3d326dc9c05e519424334c0086d1ecb6ed15f17db56fdb08e8de3f9b6bdb8bb0",
+    "storageKey": "resources/b13b1141-42db-4e1f-9adf-e9884936b0e5",
+    "file": "assets/b13b1141-42db-4e1f-9adf-e9884936b0e5.wav"
+  },
+  {
+    "id": "5c06595a-f745-4d2b-9ec0-ceeff2d007e5",
+    "name": "ОНО.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3118847,
+    "sha256": "ec29848e6cfedcc1408b33e685710d2b300a810dca6491f0f5ead4cb4821a89a",
+    "storageKey": "resources/5c06595a-f745-4d2b-9ec0-ceeff2d007e5",
+    "file": "assets/5c06595a-f745-4d2b-9ec0-ceeff2d007e5.png"
+  },
+  {
+    "id": "32e9c875-6d43-4f81-8d07-53c017a8ae32",
+    "name": "СВЕРХ_Я.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2202152,
+    "sha256": "97aa0fcd5f05fad0ebc84d73601d218806c5c5795ebd9e232505400fb710684a",
+    "storageKey": "resources/32e9c875-6d43-4f81-8d07-53c017a8ae32",
+    "file": "assets/32e9c875-6d43-4f81-8d07-53c017a8ae32.png"
+  },
+  {
+    "id": "56077692-f208-4927-9dcd-02161a73ad84",
+    "name": "ЭГО.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2461805,
+    "sha256": "ab77cf7dcf83cce5aad9630c57a175d12ee105a4ddc94bd59d7f7e8a833a755f",
+    "storageKey": "resources/56077692-f208-4927-9dcd-02161a73ad84",
+    "file": "assets/56077692-f208-4927-9dcd-02161a73ad84.png"
+  },
+  {
+    "id": "7b09d0a2-7788-4463-a611-426523a50d80",
+    "name": "брюки.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2578869,
+    "sha256": "8818ad852cefc701828bf23693ca2981ac8eb7331882f40be39ec2e8da91e3e6",
+    "storageKey": "resources/7b09d0a2-7788-4463-a611-426523a50d80",
+    "file": "assets/7b09d0a2-7788-4463-a611-426523a50d80.png"
+  },
+  {
+    "id": "1c311282-6293-4df9-b8f8-e5f1676e67b6",
+    "name": "туфли.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2553716,
+    "sha256": "6c163504750f2ea47df40a34b6c534e5226c2b8e6c76d0993e3889aac2487439",
+    "storageKey": "resources/1c311282-6293-4df9-b8f8-e5f1676e67b6",
+    "file": "assets/1c311282-6293-4df9-b8f8-e5f1676e67b6.png"
+  },
+  {
+    "id": "b4a4887f-2898-48c2-b150-76de05d8124c",
+    "name": "портрет.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2743461,
+    "sha256": "4d628f2317f3ba243810ce23e5bc0453a92c9e8017565d8f74862926ef05a096",
+    "storageKey": "resources/b4a4887f-2898-48c2-b150-76de05d8124c",
+    "file": "assets/b4a4887f-2898-48c2-b150-76de05d8124c.png"
+  },
+  {
+    "id": "d212d6be-aebb-44d6-8d2b-ad4bc8c52f37",
+    "name": "туфли_инвентарь.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1305092,
+    "sha256": "e88964855b60fd5108f4c15a30cda267a781ce9e2782deb3d2cffff8d26b4fda",
+    "storageKey": "resources/d212d6be-aebb-44d6-8d2b-ad4bc8c52f37",
+    "file": "assets/d212d6be-aebb-44d6-8d2b-ad4bc8c52f37.png"
+  },
+  {
+    "id": "489d2698-980a-4167-9725-2a893ea00fcd",
+    "name": "брюки_инвентарь.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1142919,
+    "sha256": "32c9ac34a5572c9c7b02291545ee02381e8bc36645bf90d3b05ee95d51fd9363",
+    "storageKey": "resources/489d2698-980a-4167-9725-2a893ea00fcd",
+    "file": "assets/489d2698-980a-4167-9725-2a893ea00fcd.png"
+  },
+  {
+    "id": "ff8f6f5b-718c-45f7-9859-7fc47afb5506",
+    "name": "рубашка_инвентарь.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1259181,
+    "sha256": "88ae6aa9a90b0f82b476231785b1778ed712d4913bb983408ee26b8995b04999",
+    "storageKey": "resources/ff8f6f5b-718c-45f7-9859-7fc47afb5506",
+    "file": "assets/ff8f6f5b-718c-45f7-9859-7fc47afb5506.png"
+  },
+  {
+    "id": "760f5cab-0370-4a2a-9fba-9f3e13b23493",
+    "name": "икона.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3528606,
+    "sha256": "a3c493b3cdbcdc2e32af08d16829972a89d94890269c1d70f178c94e34c9890e",
+    "storageKey": "resources/760f5cab-0370-4a2a-9fba-9f3e13b23493",
+    "file": "assets/760f5cab-0370-4a2a-9fba-9f3e13b23493.png"
+  },
+  {
+    "id": "481acf50-343a-43b8-83a6-a4b298961560",
+    "name": "икона_верх.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3494050,
+    "sha256": "b1d59f7ea6face0589536a2e866f45643f66ea59cd568268f0fad3b694d8fadf",
+    "storageKey": "resources/481acf50-343a-43b8-83a6-a4b298961560",
+    "file": "assets/481acf50-343a-43b8-83a6-a4b298961560.png"
+  },
+  {
+    "id": "94f69584-7ba0-4496-b564-d218a5a16377",
+    "name": "часы_карманные.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2220570,
+    "sha256": "3162390498c916f6872da6d2fc2d9af246539a734e88f9d21bd8410319775b31",
+    "storageKey": "resources/94f69584-7ba0-4496-b564-d218a5a16377",
+    "file": "assets/94f69584-7ba0-4496-b564-d218a5a16377.png"
+  },
+  {
+    "id": "e36b1e79-48eb-4167-9289-e8e44b662da5",
+    "name": "параколум.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3353956,
+    "sha256": "6ab2e5a9bd596f01f2038185948b79694d8d12738c8df6ace8ce3f138b666542",
+    "storageKey": "resources/e36b1e79-48eb-4167-9289-e8e44b662da5",
+    "file": "assets/e36b1e79-48eb-4167-9289-e8e44b662da5.png"
+  },
+  {
+    "id": "3adafbdb-6aab-413c-a831-8fdf70e6716c",
+    "name": "ключ.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1051156,
+    "sha256": "cf4a62aab1e1f2de7b00692d103754652519c49e42f464989155740325e83b01",
+    "storageKey": "resources/3adafbdb-6aab-413c-a831-8fdf70e6716c",
+    "file": "assets/3adafbdb-6aab-413c-a831-8fdf70e6716c.png"
+  },
+  {
+    "id": "57ec8750-d1d3-4d69-90e7-03d577f763cd",
+    "name": "труба.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2124794,
+    "sha256": "57b199ed9dc179d4e6c8b45ad996a0dafdecb0a0302d9a19c5e809e4df7cfbde",
+    "storageKey": "resources/57ec8750-d1d3-4d69-90e7-03d577f763cd",
+    "file": "assets/57ec8750-d1d3-4d69-90e7-03d577f763cd.png"
+  },
+  {
+    "id": "d2108ed0-fa3c-473c-abab-ad70e6065a7e",
+    "name": "окно.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3185746,
+    "sha256": "01168214f4fffa14757f238accf398400a3a2b5518314a38c461696c56f7f27f",
+    "storageKey": "resources/d2108ed0-fa3c-473c-abab-ad70e6065a7e",
+    "file": "assets/d2108ed0-fa3c-473c-abab-ad70e6065a7e.png"
+  },
+  {
+    "id": "22386129-1cb0-411e-b4ab-f679832beadc",
+    "name": "окно.mp3",
+    "kind": "audio",
+    "mime": "audio/mpeg",
+    "bytes": 1024834,
+    "sha256": "9d685cb18f34a1370b8fd27817f29269e4c15630b84ae06d89fd576b70f052a8",
+    "storageKey": "resources/22386129-1cb0-411e-b4ab-f679832beadc",
+    "file": "assets/22386129-1cb0-411e-b4ab-f679832beadc.mp3"
+  },
+  {
+    "id": "6e18cee8-ed64-4efa-bc49-50cfbd041729",
+    "name": "читательский билет.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1969377,
+    "sha256": "82f60490c70396e0399f61895a31e973c715fe52559e0224587d4211c34ed902",
+    "storageKey": "resources/6e18cee8-ed64-4efa-bc49-50cfbd041729",
+    "file": "assets/6e18cee8-ed64-4efa-bc49-50cfbd041729.png"
+  },
+  {
+    "id": "4e104fad-8f47-4cec-8ff8-af0762cc552c",
+    "name": "визитка.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1842656,
+    "sha256": "44a35a8e49bd005683f286db86202e70f409d55887a0d53307fe77bc47a69600",
+    "storageKey": "resources/4e104fad-8f47-4cec-8ff8-af0762cc552c",
+    "file": "assets/4e104fad-8f47-4cec-8ff8-af0762cc552c.png"
+  },
+  {
+    "id": "9e849603-62d7-418f-84c4-155b285e6e97",
+    "name": "стена2.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3542373,
+    "sha256": "545bed65b0e78533db773d9ddcb7209ff9a2fc087f5d8b2d0a1445efaae5bbe4",
+    "storageKey": "resources/9e849603-62d7-418f-84c4-155b285e6e97",
+    "file": "assets/9e849603-62d7-418f-84c4-155b285e6e97.png"
+  },
+  {
+    "id": "cd6178a9-984b-437a-8188-0885109e2e52",
+    "name": "Дентра1.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1842249,
+    "sha256": "b081dd8a2009d6d675f8a388ecc3f6ae72570a7e340a24cb9fb96efd0931f2d0",
+    "storageKey": "resources/cd6178a9-984b-437a-8188-0885109e2e52",
+    "file": "assets/cd6178a9-984b-437a-8188-0885109e2e52.png"
+  },
+  {
+    "id": "5fa1c62e-db03-4f4f-bf27-6e500ed29cbd",
+    "name": "Телекс_З.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2530210,
+    "sha256": "e4471224ffdc8b9be2b6c7a40cf1c1afb8f8b88e5afbc655f387020169f22c9b",
+    "storageKey": "resources/5fa1c62e-db03-4f4f-bf27-6e500ed29cbd",
+    "file": "assets/5fa1c62e-db03-4f4f-bf27-6e500ed29cbd.png"
+  },
+  {
+    "id": "38b877f9-3e5b-43e7-8f71-162094440300",
+    "name": "Телекс_О.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3011170,
+    "sha256": "d1acffb84e9cf6d0facf911ed1f998a1d2168312ea77e178273082a0555ef3e8",
+    "storageKey": "resources/38b877f9-3e5b-43e7-8f71-162094440300",
+    "file": "assets/38b877f9-3e5b-43e7-8f71-162094440300.png"
+  },
+  {
+    "id": "ef7cfb44-da33-4761-a2af-8d8a91e212a8",
+    "name": "окно2.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2932557,
+    "sha256": "ffb06f21fa46fbf6cae2ca2f7ee58382bf575cda5f6c265fdbba26efa9357889",
+    "storageKey": "resources/ef7cfb44-da33-4761-a2af-8d8a91e212a8",
+    "file": "assets/ef7cfb44-da33-4761-a2af-8d8a91e212a8.png"
+  },
+  {
+    "id": "a767fdb4-904e-4c35-beea-db58fb39c57f",
+    "name": "дверь_д1.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3207202,
+    "sha256": "92a3d80a0c0e239839d9ae0e523a58cd4eb7d873d87ec0d8dbaca0c00b941518",
+    "storageKey": "resources/a767fdb4-904e-4c35-beea-db58fb39c57f",
+    "file": "assets/a767fdb4-904e-4c35-beea-db58fb39c57f.png"
+  },
+  {
+    "id": "5b3c8959-da4d-4647-8568-39f236ec5f6b",
+    "name": "дверь_д2.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 3031277,
+    "sha256": "d5e1f78532a14d4dc8621bb4de3da58c498761136525984d532de936d476c6c5",
+    "storageKey": "resources/5b3c8959-da4d-4647-8568-39f236ec5f6b",
+    "file": "assets/5b3c8959-da4d-4647-8568-39f236ec5f6b.png"
+  },
+  {
+    "id": "d19db435-3cf1-4c26-8b57-cb173ec0cf47",
+    "name": "дверь_д3.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2699546,
+    "sha256": "bad9826d6f443936bf169892800495582970fa2f6a2d0c2d3f62708ee0bb97ed",
+    "storageKey": "resources/d19db435-3cf1-4c26-8b57-cb173ec0cf47",
+    "file": "assets/d19db435-3cf1-4c26-8b57-cb173ec0cf47.png"
+  },
+  {
+    "id": "fa501e0f-74e4-4059-ad33-6cc76e85b588",
+    "name": "Дентра5.mp3",
+    "kind": "audio",
+    "mime": "audio/mpeg",
+    "bytes": 49154,
+    "sha256": "daf1c5428f41d503f09250074b7a7f851bfedad367652906407f39491327152d",
+    "storageKey": "resources/fa501e0f-74e4-4059-ad33-6cc76e85b588",
+    "file": "assets/fa501e0f-74e4-4059-ad33-6cc76e85b588.mp3"
+  },
+  {
+    "id": "802c8b5f-b51a-4b71-a521-39395cc2f608",
+    "name": "дентра4.mp3",
+    "kind": "audio",
+    "mime": "audio/mpeg",
+    "bytes": 49154,
+    "sha256": "1ce59b295a7fdc1ecd1926775d10d43f919db61a52375f74852499a0a718c325",
+    "storageKey": "resources/802c8b5f-b51a-4b71-a521-39395cc2f608",
+    "file": "assets/802c8b5f-b51a-4b71-a521-39395cc2f608.mp3"
+  },
+  {
+    "id": "3e0f1f68-2360-477b-9f0a-f29d8cb06021",
+    "name": "Дентра3.mp3",
+    "kind": "audio",
+    "mime": "audio/mpeg",
+    "bytes": 49154,
+    "sha256": "000dd7cbb5514fc6afd16325c453b04a2b94dc94e1e028610ce067f0bcfa0e95",
+    "storageKey": "resources/3e0f1f68-2360-477b-9f0a-f29d8cb06021",
+    "file": "assets/3e0f1f68-2360-477b-9f0a-f29d8cb06021.mp3"
+  },
+  {
+    "id": "5435959c-c998-4849-b84b-08be7a7e7a8c",
+    "name": "дентра2.mp3",
+    "kind": "audio",
+    "mime": "audio/mpeg",
+    "bytes": 50199,
+    "sha256": "25157664d4110f81ee8d3906dd75a2d22bd0d618d4145a75595295ade1315d7e",
+    "storageKey": "resources/5435959c-c998-4849-b84b-08be7a7e7a8c",
+    "file": "assets/5435959c-c998-4849-b84b-08be7a7e7a8c.mp3"
+  },
+  {
+    "id": "fefb0967-6d82-47b1-8f8a-33126f2e96fb",
+    "name": "Дентра1.mp3",
+    "kind": "audio",
+    "mime": "audio/mpeg",
+    "bytes": 49154,
+    "sha256": "c6bacc26a0436cd622c0faac9825647a310b2fbaa49e0dce4cd31a5aec73b3a7",
+    "storageKey": "resources/fefb0967-6d82-47b1-8f8a-33126f2e96fb",
+    "file": "assets/fefb0967-6d82-47b1-8f8a-33126f2e96fb.mp3"
+  },
+  {
+    "id": "80b456b7-ba9d-4f73-a2c1-c562f6375e68",
+    "name": "лестница.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2160715,
+    "sha256": "474bbc1279693560987815c22247c5dbd93ea1f52b1cc63d50e75bf12155e1e9",
+    "storageKey": "resources/80b456b7-ba9d-4f73-a2c1-c562f6375e68",
+    "file": "assets/80b456b7-ba9d-4f73-a2c1-c562f6375e68.png"
+  },
+  {
+    "id": "c527d3e1-a3b7-4a63-8f76-1d6b335cebc0",
+    "name": "ночной_аччайр.wav",
+    "kind": "audio",
+    "mime": "audio/wav",
+    "bytes": 13106480,
+    "sha256": "f2c15ae506160d72c94cdd7c56e4716409b5a43807f3793b1bef5b21796e66f0",
+    "storageKey": "resources/c527d3e1-a3b7-4a63-8f76-1d6b335cebc0",
+    "file": "assets/c527d3e1-a3b7-4a63-8f76-1d6b335cebc0.wav.gz",
+    "compression": "gzip",
+    "storedBytes": 9737499,
+    "storedSHA256": "b5d5f0c08d7c3ff6602a35cc4ce1b859e9c76ae9c3a6cb786bd408c4eab96694"
+  },
+  {
+    "id": "b897f418-00d7-43fd-a42e-70ebd2074197",
+    "name": "дневной_двор.wav",
+    "kind": "audio",
+    "mime": "audio/wav",
+    "bytes": 2232424,
+    "sha256": "df3f9bab22810e271f965db8ec620137079d817dd7f0ebe52ab5493be06d64e8",
+    "storageKey": "resources/b897f418-00d7-43fd-a42e-70ebd2074197",
+    "file": "assets/b897f418-00d7-43fd-a42e-70ebd2074197.wav"
+  },
+  {
+    "id": "8fb9d87b-09ff-45f3-ae75-74bf8f8a1b68",
+    "name": "Дентра2.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 1877064,
+    "sha256": "b7724b0509f7b856741df53fba06a2b17dbebe7e0ee47cb9fb5f75a2042b8ae8",
+    "storageKey": "resources/8fb9d87b-09ff-45f3-ae75-74bf8f8a1b68",
+    "file": "assets/8fb9d87b-09ff-45f3-ae75-74bf8f8a1b68.png"
+  },
+  {
+    "id": "4d4c372a-5c07-49ef-8976-ed6b849f4598",
+    "name": "ДентраС.png",
+    "kind": "image",
+    "mime": "image/png",
+    "bytes": 2169176,
+    "sha256": "17f7c43ef54de78f09b7287eb712bc13a461ae5cf3f96a7f98f197c122066861",
+    "storageKey": "resources/4d4c372a-5c07-49ef-8976-ed6b849f4598",
+    "file": "assets/4d4c372a-5c07-49ef-8976-ed6b849f4598.png"
+  }
+]

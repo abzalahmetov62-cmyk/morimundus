@@ -1,0 +1,27 @@
+'use client';
+import { useState } from 'react';
+import { Plus, Trash2 } from 'lucide-react';
+import { toast } from 'sonner';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Switch } from '@/components/ui/switch';
+import { parseProject, type Project, type Recipe } from '@/lib/engine/project';
+import type { EditProject } from '@/lib/editor/use-project';
+import { ReferencePicker } from './action-editor';
+import { ConditionEditor } from './condition-editor';
+import { NumberField } from './number-field';
+import { TagsField } from './tags-field';
+
+export function RecipeLibrary({ project, edit }: { project: Project; edit: EditProject }) {
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const recipe = project.recipes.find(r => r.id === selectedId) ?? project.recipes[0];
+  const update = (patch: Partial<Recipe>, group?: string) => { if (recipe) edit(p => ({ ...p, recipes: p.recipes.map(r => r.id === recipe.id ? { ...r, ...patch } : r) }), group); };
+  const create = () => {
+    const item = project.items[0]; if (!item) { toast.error('Сначала создай предмет для результата рецепта.'); return; }
+    const id = 'recipe-' + crypto.randomUUID();
+    edit(p => ({ ...p, recipes: [...p.recipes, { id, name: 'Новый рецепт', ingredientTags: ['ингредиент'], resultItemId: item.id, durationSeconds: 0, condition: null, containerObjectId: null, allowExtraIngredients: false, unavailableReason: '' }] })); setSelectedId(id);
+  };
+  const remove = () => { if (!recipe) return; try { edit(p => parseProject({ ...p, recipes: p.recipes.filter(r => r.id !== recipe.id) })); setSelectedId(null); } catch { toast.error('Рецепт используется действием. Сначала убери эту связь.'); } };
+  return <div className="scenario-workbench"><div className="script-workspace"><aside className="script-list"><div className="section-title"><h2>Рецепты</h2><Button size="sm" variant="outline" aria-label="Добавить рецепт" disabled={!project.items.length || project.recipes.length >= 1000} onClick={create}><Plus /></Button></div>{project.recipes.map(r => <button type="button" key={r.id} className={r.id === recipe?.id ? 'script-list-item is-selected' : 'script-list-item'} onClick={() => setSelectedId(r.id)}><strong>{r.name}</strong><span>{r.ingredientTags.length} ингредиентов · {r.durationSeconds ? r.durationSeconds + ' с' : 'сразу'}</span></button>)}</aside>{recipe ? <section className="script-edit-sheet item-edit-sheet"><div className="section-title"><h2>Свойства рецепта</h2><Button variant="ghost" aria-label="Удалить рецепт" onClick={remove}><Trash2 /></Button></div><div className="form-field"><Label htmlFor="recipe-name">Название</Label><Input id="recipe-name" maxLength={160} value={recipe.name} onChange={e => update({ name: e.target.value }, 'recipe-name-' + recipe.id)} /></div><ReferencePicker id="recipe-container" label="Где можно приготовить" value={recipe.containerObjectId} items={project.objects.filter(o => o.container)} nullable noneLabel="В любом контейнере" onChange={containerObjectId => update({ containerObjectId })} /><TagsField key={recipe.id} id="recipe-ingredients" label="Признаки ингредиентов по отдельным позициям" value={recipe.ingredientTags} required repeated onChange={ingredientTags => update({ ingredientTags })} help="Через запятую: овощ, овощ, вода — три отдельные вещи. Одна вещь с несколькими признаками занимает одну позицию." /><div className="collision-toggle"><Label htmlFor="recipe-extra">Разрешить другие вещи в контейнере</Label><Switch id="recipe-extra" checked={recipe.allowExtraIngredients} onCheckedChange={allowExtraIngredients => update({ allowExtraIngredients })} /></div><p className="field-help">Другие вещи сохраняются. Без этого разрешения состав должен точно соответствовать рецепту.</p><ReferencePicker id="recipe-result" label="Готовая вещь" value={recipe.resultItemId} items={project.items} onChange={resultItemId => { if (resultItemId) update({ resultItemId }); }} /><NumberField id="recipe-duration" label="Длительность, секунд мира" value={recipe.durationSeconds} min={0} max={365 * 86400} step={1} onCommit={durationSeconds => update({ durationSeconds })} /><p className="field-help">0 — сразу заменить ингредиенты результатом в контейнере. Большее значение запускает таймер мира. После отсчёта исходные ингредиенты заменяются результатом в контейнере, даже если герой ушёл в другую локацию.</p><ConditionEditor project={project} label="Когда можно начать" value={recipe.condition} onChange={condition => update({ condition })} /><div className="form-field"><Label htmlFor="recipe-reason">Причина отказа при невыполненном условии</Label><Input id="recipe-reason" maxLength={500} value={recipe.unavailableReason} onChange={e => update({ unavailableReason: e.target.value }, 'recipe-reason-' + recipe.id)} /></div><p className="field-help">Результат должен соответствовать допустимым признакам контейнера. Ошибка отменяет весь процесс, не расходуя ингредиенты.</p></section> : <section className="script-empty"><h2>Приготовление из содержимого</h2><p>Определи признаки вещей, контейнер и результат. Рецепт можно запустить из контейнера или действием реакции.</p><Button disabled={!project.items.length} onClick={create}><Plus />Первый рецепт</Button>{!project.items.length && <p>Сначала создай предмет для результата.</p>}</section>}</div></div>;
+}

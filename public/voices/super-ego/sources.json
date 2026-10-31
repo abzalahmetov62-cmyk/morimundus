@@ -1,0 +1,66 @@
+[
+  {
+    "file": "01.wav",
+    "source": "супер-эго-короткий1.m4a",
+    "source_sha256": "5a412de2b02673da871271b5691ae1cc1735fac9c010bf41af652cd873b89ca8",
+    "startSeconds": 0.21,
+    "duration": 0.15,
+    "peak": 0.292
+  },
+  {
+    "file": "02.wav",
+    "source": "супер-эго-короткий2.m4a",
+    "source_sha256": "42b8db5161e3f52c7cfb6066ac29579e66c862116f6e89c71bdc33be41d0d49f",
+    "startSeconds": 0.16,
+    "duration": 0.16,
+    "peak": 0.3554
+  },
+  {
+    "file": "03.wav",
+    "source": "супер-эго-длинный1.mp3",
+    "source_sha256": "338b46e5fbf0f6768d6b1648956a1b29338e301f8da0341780edb2aa2b0cad10",
+    "startSeconds": 0.11,
+    "duration": 0.2,
+    "peak": 0.2987
+  },
+  {
+    "file": "04.wav",
+    "source": "супер-эго-длинный1.mp3",
+    "source_sha256": "338b46e5fbf0f6768d6b1648956a1b29338e301f8da0341780edb2aa2b0cad10",
+    "startSeconds": 1.075,
+    "duration": 0.2,
+    "peak": 0.3039
+  },
+  {
+    "file": "05.wav",
+    "source": "супер-эго-длинный2.m4a",
+    "source_sha256": "a166a1f4a5bad49f5ab379c2327e599354670c7b7ecb28f6bc7fa73730b86bd7",
+    "startSeconds": 0.61,
+    "duration": 0.18,
+    "peak": 0.3341
+  },
+  {
+    "file": "06.wav",
+    "source": "супер-эго-длинный2.m4a",
+    "source_sha256": "a166a1f4a5bad49f5ab379c2327e599354670c7b7ecb28f6bc7fa73730b86bd7",
+    "startSeconds": 0.84,
+    "duration": 0.18,
+    "peak": 0.3
+  },
+  {
+    "file": "07.wav",
+    "source": "супер-эго-длинный3.m4a",
+    "source_sha256": "0f7e30e046995827331896e95909b4a831c479fae869375a3d2f73f002a63b69",
+    "startSeconds": 0.31,
+    "duration": 0.19,
+    "peak": 0.2836
+  },
+  {
+    "file": "08.wav",
+    "source": "супер-эго-длинный3.m4a",
+    "source_sha256": "0f7e30e046995827331896e95909b4a831c479fae869375a3d2f73f002a63b69",
+    "startSeconds": 0.78,
+    "duration": 0.19,
+    "peak": 0.3081
+  }
+]

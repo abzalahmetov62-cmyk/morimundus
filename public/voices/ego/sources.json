@@ -1,0 +1,42 @@
+[
+  {
+    "file": "01.wav",
+    "source": "Эго1.m4a",
+    "source_sha256": "54f2e4dfa8f9f19ebec78b4d0c8d4f4ebad8a5e88a8fbd27d6fc67427adb4d29",
+    "startSeconds": 0.77,
+    "duration": 0.2,
+    "peak": 0.181
+  },
+  {
+    "file": "02.wav",
+    "source": "Эго2.m4a",
+    "source_sha256": "5c56d307fc8e8becff7cc7236d545d8c5ddaec7065341ba676fa70299364fa8a",
+    "startSeconds": 0.35,
+    "duration": 0.2,
+    "peak": 0.2238
+  },
+  {
+    "file": "03.wav",
+    "source": "Эго3.m4a",
+    "source_sha256": "ee9ed1c8abfb54efbc7276390701fd4940f81ffdaf5ef0e494138ac6fb75583a",
+    "startSeconds": 0.74,
+    "duration": 0.2,
+    "peak": 0.2571
+  },
+  {
+    "file": "04.wav",
+    "source": "Эго4.m4a",
+    "source_sha256": "c1b4e67cfc468f1046653e2ca836e651a55d36ed787e813e00e1bb8ae70d0f4b",
+    "startSeconds": 0.54,
+    "duration": 0.2,
+    "peak": 0.2257
+  },
+  {
+    "file": "05.wav",
+    "source": "Эго5.m4a",
+    "source_sha256": "dfb756d33530c4bb7095251cf185cccfa82e4b6a6763e0eae5306e1ffd5c4c0c",
+    "startSeconds": 0.33,
+    "duration": 0.2,
+    "peak": 0.1864
+  }
+]
