@@ -1,0 +1,12 @@
+'use client';
+import { useEffect, useRef } from 'react';
+import { Button } from '@/components/ui/button';
+import type { GameState } from '@/lib/engine/game-state';
+import type { TestSession } from '@/lib/engine/session';
+
+export function RpgPanel({ session, state, onClose, onPause }: { session: TestSession; state: GameState; onRetry: (id: string) => void; onClose: () => void; onPause: () => void }) {
+  const panel = useRef<HTMLElement>(null), closeButton = useRef<HTMLButtonElement>(null), pauseRef = useRef(onPause); pauseRef.current = onPause;
+  useEffect(() => { closeButton.current?.focus(); const key = (e: KeyboardEvent) => { if (e.code === 'Escape') { e.preventDefault(); pauseRef.current(); } if (e.code === 'Tab') { const buttons = [...(panel.current?.querySelectorAll<HTMLButtonElement>('button:not(:disabled)') ?? [])], first = buttons[0], last = buttons.at(-1); if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last?.focus(); } else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first?.focus(); } } }; window.addEventListener('keydown', key); return () => window.removeEventListener('keydown', key); }, []);
+  const quests = session.project.quests.filter(q => state.quests[q.id]?.stageId || state.quests[q.id]?.completed);
+  return <div className="player-overlay"><section ref={panel} className="player-rpg-panel" role="dialog" aria-modal="true" aria-labelledby="rpg-heading"><div className="section-title"><h2 id="rpg-heading">{session.project.character.name} · журнал</h2><Button ref={closeButton} variant="outline" onClick={onClose}>Закрыть</Button></div><h3>Действующие статусы</h3>{state.player.statuses.length ? session.project.character.statuses.filter(s => state.player.statuses.includes(s.id)).map(s => <article className="rpg-journal-entry" key={s.id}><strong>{s.name}</strong><p>{s.description}</p></article>) : <p className="field-help">Нет.</p>}<h3>Задания</h3>{quests.length ? quests.map(q => { const progress = state.quests[q.id], stage = q.stages.find(s => s.id === progress.stageId); return <article className="rpg-journal-entry" key={q.id}><strong>{q.name}{progress.completed ? ' · завершено' : ''}</strong><p>{q.description}</p>{stage && <><h4>{stage.name}</h4><p>{stage.description}</p></>}</article>; }) : <p className="field-help">Пока нет начатых заданий.</p>}<div className="player-menu-actions"><Button onClick={onClose}>Продолжить</Button><Button variant="ghost" onClick={onPause}>Пауза</Button></div></section></div>;
+}

@@ -1,0 +1,6242 @@
+{
+  "revision": 8,
+  "authorRevision": 150,
+  "publishedAt": "2026-10-23T11:06:52.142Z",
+  "fingerprint": "195fa678912ef4cb86de2c249f2c8d04320a16ee7f4af0ee998fd2ded6472ce3",
+  "title": "Morimundus",
+  "project": {
+    "formatVersion": 1,
+    "id": "morimundus",
+    "meta": {
+      "title": "Morimundus",
+      "author": "",
+      "description": "Добро пожаловать в мир, стоящий на грани катастрофы.",
+      "createdAt": "2026-10-08T11:10:12.107Z",
+      "language": "ru"
+    },
+    "settings": {
+      "paperColor": "#e8e1d7",
+      "startLocationId": "apartment",
+      "startScriptId": "script-0ca99cfc-4880-4b6a-9856-f8fd6c09e31b",
+      "baseInventorySlots": 3,
+      "worldSecondsPerRealSecond": 90,
+      "startWorldSeconds": 25200,
+      "pauseOnInteraction": true,
+      "pauseOnMenu": true,
+      "pauseWhenHidden": true,
+      "elapsedWhileClosed": false,
+      "checkFormula": {
+        "mode": "dice",
+        "dieSides": 20,
+        "skillWeight": 1,
+        "statWeight": 1
+      },
+      "equipmentSlots": [
+        "head",
+        "torso",
+        "legs",
+        "feet",
+        "accessory"
+      ],
+      "typewriter": {
+        "enabled": true,
+        "charactersPerSecond": 35,
+        "soundAssetId": "b13b1141-42db-4e1f-9adf-e9884936b0e5",
+        "volume": 0.25
+      }
+    },
+    "voices": [
+      {
+        "id": "super-ego",
+        "name": "СУПЕР-ЭГО",
+        "imageAssetId": "32e9c875-6d43-4f81-8d07-53c017a8ae32",
+        "samples": [
+          {
+            "builtinSampleId": "super-ego-01"
+          },
+          {
+            "builtinSampleId": "super-ego-05"
+          },
+          {
+            "builtinSampleId": "super-ego-06"
+          },
+          {
+            "builtinSampleId": "super-ego-07"
+          },
+          {
+            "builtinSampleId": "super-ego-08"
+          }
+        ],
+        "rate": 0.6,
+        "pitchVariation": 3,
+        "volumeVariation": 0.3,
+        "intervalSeconds": 0.085
+      },
+      {
+        "id": "ego",
+        "name": "ЭГО",
+        "imageAssetId": "56077692-f208-4927-9dcd-02161a73ad84",
+        "samples": [
+          {
+            "builtinSampleId": "ego-01"
+          },
+          {
+            "builtinSampleId": "ego-02"
+          },
+          {
+            "builtinSampleId": "ego-03"
+          },
+          {
+            "builtinSampleId": "ego-04"
+          },
+          {
+            "builtinSampleId": "ego-05"
+          }
+        ],
+        "rate": 1.2,
+        "pitchVariation": 0.5,
+        "volumeVariation": 0.5,
+        "intervalSeconds": 0.06
+      },
+      {
+        "id": "ono",
+        "name": "ОНО",
+        "imageAssetId": "5c06595a-f745-4d2b-9ec0-ceeff2d007e5",
+        "samples": [
+          {
+            "builtinSampleId": "ono-01"
+          },
+          {
+            "builtinSampleId": "ono-02"
+          },
+          {
+            "builtinSampleId": "ono-03"
+          },
+          {
+            "builtinSampleId": "ono-04"
+          }
+        ],
+        "rate": 0.9,
+        "pitchVariation": 0.1,
+        "volumeVariation": 0.1,
+        "intervalSeconds": 0.06
+      }
+    ],
+    "assets": [
+      {
+        "id": "47953c55-4f18-4d9b-b41f-9a0f72edd3ea",
+        "name": "пол.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 3869061,
+        "sha256": "9e63eaee9ebf1a6c8194274ae1270b2466b7020e1d5f58bf364507b8f470bcc2"
+      },
+      {
+        "id": "38cecc81-cc15-40aa-b1d5-8323d8dc6327",
+        "name": "ouverture1.mp3",
+        "kind": "audio",
+        "mime": "audio/mpeg",
+        "bytes": 1161089,
+        "sha256": "e56be9af2ca64b9652ed874c654efff9de0a445f2021bb0451709aaf6ffe13c2"
+      },
+      {
+        "id": "d038b11e-92ef-453a-ae16-5cab300f66dd",
+        "name": "Bottle Break (online-video-cutter.com).mp3",
+        "kind": "audio",
+        "mime": "audio/mpeg",
+        "bytes": 43928,
+        "sha256": "a17afe5ef3220568458100c06e1a6a3b363d4f52f604f79925681802273bc049"
+      },
+      {
+        "id": "f68cf2c6-781d-4d80-bcd3-61790d48c292",
+        "name": "Графитовый эскиз металлической двери.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 3920309,
+        "sha256": "407a643fd0a185d5e34575766d855d3c26319d37111ffc2c44c9dd9b3cd771fb"
+      },
+      {
+        "id": "4957f663-0413-48d9-93ee-d2175d46ecd6",
+        "name": "ouverture2-1.mp3",
+        "kind": "audio",
+        "mime": "audio/mpeg",
+        "bytes": 2720913,
+        "sha256": "c75817550d72f61096de59521705cf77c19f0a9bd2403c185aa794269c11e1ac"
+      },
+      {
+        "id": "d7d16666-3a24-4e6a-8169-75bc5d25bec5",
+        "name": "текстура стены.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 3572104,
+        "sha256": "9f5408f1a882b2d88a51ccaaaf608b70cb77fb07cea3b32ae15da2ba1e0ea494"
+      },
+      {
+        "id": "2d604749-4360-49b5-99a9-4cfe03216650",
+        "name": "потолок.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 3733165,
+        "sha256": "36d5d99b0aee098e262d94ba57ba482ccf2adcd68a1ac8df7454605ff948e9e6"
+      },
+      {
+        "id": "79c55c41-ed90-431e-9f67-697a2e3218ee",
+        "name": "кафель.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 3717013,
+        "sha256": "d0ef16376a4e8a79fb749472e72781ec1327cead197636ef86c8c9f08eaf6ea5"
+      },
+      {
+        "id": "3136c164-9fd9-4b12-9d28-529c266065cc",
+        "name": "кровать.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1739202,
+        "sha256": "3798885b77de6cce4ee2bce6af4adcb72d0a5afb86b50da7d8fa221e4ca2f0d0"
+      },
+      {
+        "id": "8d267c8d-0e0a-4512-a4f5-a2c1fd53464c",
+        "name": "стул.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1316755,
+        "sha256": "0adb1b07c293375a536247da2d949e8715cc4c9fb1736c5ed1cbc0e1c0aab889"
+      },
+      {
+        "id": "f6840a4c-4149-417c-a082-6ba6b53051e9",
+        "name": "Раковина.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2570233,
+        "sha256": "d4ace381242b64515e6a3b95338d12de5a806a1420c29a8d04a2bd719f0d00f6"
+      },
+      {
+        "id": "cad3fa92-59ce-45ae-967e-4e2517d3c7b9",
+        "name": "бумага_мусор.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 3075297,
+        "sha256": "8196da863eb5462d78819b34da4f88dd489a19baf23519bd6cfb70732d8bfa11"
+      },
+      {
+        "id": "3fd1b62d-bb9e-4354-ad86-f3b87ceacd3a",
+        "name": "бутылка.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1965243,
+        "sha256": "5044b7d304dbb0002392800c2508257a4dede029edcb5397fa322d80dd1d4ed5"
+      },
+      {
+        "id": "40dc642c-ee3d-47ab-9e2a-28860809c11b",
+        "name": "рубашка.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2100803,
+        "sha256": "52feda2a1e47b467f8d24de5c383ea41cc9b696ac7d9c7a0a125b13a7a7614d4"
+      },
+      {
+        "id": "21bf9923-0b2e-4cfd-91ed-c85f863c63e4",
+        "name": "мусоропровод.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2026714,
+        "sha256": "ff8751981f36e86303a329890ea81e556d7b3175143403212e9c094ea4977098"
+      },
+      {
+        "id": "77125a25-b788-4adf-90a7-cea5d4b9257c",
+        "name": "бутылка_целая.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2097528,
+        "sha256": "5566280b4fe1c6aae9670951edc1acf64ae2721d237396cf6373dc958f3fc708"
+      },
+      {
+        "id": "903ea75a-0f2c-464a-a0c4-0d43d84f9907",
+        "name": "стол.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1681169,
+        "sha256": "c333c69637b38a1d7c922272d50b47dcff72fcedc015d6393bc82a66b5dc4eab"
+      },
+      {
+        "id": "9601199c-46ee-4d2a-8b18-ffb9fc8aa58b",
+        "name": "стол_бумага.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1562880,
+        "sha256": "1e8ccbd09c5c7b69f558bec7fcada5d5df4962245cf24da19120cac150a08784"
+      },
+      {
+        "id": "30f3ba51-246e-4f8c-9058-0c3a1b06cbe3",
+        "name": "шкаф.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2788574,
+        "sha256": "4457cb4439fe5b8b06eb43415b74f20fd51a46b7f0da0cb58a6df1a236f6f872"
+      },
+      {
+        "id": "150ccd10-bcbe-467a-bca4-c87805eddcb3",
+        "name": "туалет.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1593815,
+        "sha256": "7965441241e3880c5282e457add732e830ca7a83a63b06d526c6b3e3e8f95b2f"
+      },
+      {
+        "id": "fb056ffc-1183-48e0-90d6-d63d4ffd0471",
+        "name": "раковина_ванная.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2777873,
+        "sha256": "246fb660a953ad99db941bdf144c7f934139206598d56a496dde8a57f111961d"
+      },
+      {
+        "id": "eeafcc8b-11fc-4b27-9cf7-67b501edc20e",
+        "name": "плита.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 3450319,
+        "sha256": "54a264f8bd89d4e863c9e4f4b7f93b61bcfc90c3678b52e8064732465d877648"
+      },
+      {
+        "id": "edac4cac-0303-46e2-8a83-ab159968874a",
+        "name": "шкафчик.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2936724,
+        "sha256": "fd6e570c3c834d0781dcf5c2b741a1e939b99e05286b617f7ece8ac117b0cd7f"
+      },
+      {
+        "id": "535a6c96-dbe6-4a48-bb08-506c96db498f",
+        "name": "ванна.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1924564,
+        "sha256": "631b08301b8326925c664d267f0a8a42de6ed98af40568ba6adf7baaca7524e2"
+      },
+      {
+        "id": "b13b1141-42db-4e1f-9adf-e9884936b0e5",
+        "name": "клавиши.wav",
+        "kind": "audio",
+        "mime": "audio/wav",
+        "bytes": 176444,
+        "sha256": "3d326dc9c05e519424334c0086d1ecb6ed15f17db56fdb08e8de3f9b6bdb8bb0"
+      },
+      {
+        "id": "5c06595a-f745-4d2b-9ec0-ceeff2d007e5",
+        "name": "ОНО.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 3118847,
+        "sha256": "ec29848e6cfedcc1408b33e685710d2b300a810dca6491f0f5ead4cb4821a89a"
+      },
+      {
+        "id": "32e9c875-6d43-4f81-8d07-53c017a8ae32",
+        "name": "СВЕРХ_Я.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2202152,
+        "sha256": "97aa0fcd5f05fad0ebc84d73601d218806c5c5795ebd9e232505400fb710684a"
+      },
+      {
+        "id": "56077692-f208-4927-9dcd-02161a73ad84",
+        "name": "ЭГО.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2461805,
+        "sha256": "ab77cf7dcf83cce5aad9630c57a175d12ee105a4ddc94bd59d7f7e8a833a755f"
+      },
+      {
+        "id": "7b09d0a2-7788-4463-a611-426523a50d80",
+        "name": "брюки.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2578869,
+        "sha256": "8818ad852cefc701828bf23693ca2981ac8eb7331882f40be39ec2e8da91e3e6"
+      },
+      {
+        "id": "1c311282-6293-4df9-b8f8-e5f1676e67b6",
+        "name": "туфли.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2553716,
+        "sha256": "6c163504750f2ea47df40a34b6c534e5226c2b8e6c76d0993e3889aac2487439"
+      },
+      {
+        "id": "b4a4887f-2898-48c2-b150-76de05d8124c",
+        "name": "портрет.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2743461,
+        "sha256": "4d628f2317f3ba243810ce23e5bc0453a92c9e8017565d8f74862926ef05a096"
+      },
+      {
+        "id": "d212d6be-aebb-44d6-8d2b-ad4bc8c52f37",
+        "name": "туфли_инвентарь.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1305092,
+        "sha256": "e88964855b60fd5108f4c15a30cda267a781ce9e2782deb3d2cffff8d26b4fda"
+      },
+      {
+        "id": "489d2698-980a-4167-9725-2a893ea00fcd",
+        "name": "брюки_инвентарь.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1142919,
+        "sha256": "32c9ac34a5572c9c7b02291545ee02381e8bc36645bf90d3b05ee95d51fd9363"
+      },
+      {
+        "id": "ff8f6f5b-718c-45f7-9859-7fc47afb5506",
+        "name": "рубашка_инвентарь.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1259181,
+        "sha256": "88ae6aa9a90b0f82b476231785b1778ed712d4913bb983408ee26b8995b04999"
+      },
+      {
+        "id": "760f5cab-0370-4a2a-9fba-9f3e13b23493",
+        "name": "икона.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 3528606,
+        "sha256": "a3c493b3cdbcdc2e32af08d16829972a89d94890269c1d70f178c94e34c9890e"
+      },
+      {
+        "id": "481acf50-343a-43b8-83a6-a4b298961560",
+        "name": "икона_верх.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 3494050,
+        "sha256": "b1d59f7ea6face0589536a2e866f45643f66ea59cd568268f0fad3b694d8fadf"
+      },
+      {
+        "id": "94f69584-7ba0-4496-b564-d218a5a16377",
+        "name": "часы_карманные.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2220570,
+        "sha256": "3162390498c916f6872da6d2fc2d9af246539a734e88f9d21bd8410319775b31"
+      },
+      {
+        "id": "e36b1e79-48eb-4167-9289-e8e44b662da5",
+        "name": "параколум.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 3353956,
+        "sha256": "6ab2e5a9bd596f01f2038185948b79694d8d12738c8df6ace8ce3f138b666542"
+      },
+      {
+        "id": "3adafbdb-6aab-413c-a831-8fdf70e6716c",
+        "name": "ключ.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1051156,
+        "sha256": "cf4a62aab1e1f2de7b00692d103754652519c49e42f464989155740325e83b01"
+      },
+      {
+        "id": "57ec8750-d1d3-4d69-90e7-03d577f763cd",
+        "name": "труба.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 2124794,
+        "sha256": "57b199ed9dc179d4e6c8b45ad996a0dafdecb0a0302d9a19c5e809e4df7cfbde"
+      },
+      {
+        "id": "d2108ed0-fa3c-473c-abab-ad70e6065a7e",
+        "name": "окно.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 3185746,
+        "sha256": "01168214f4fffa14757f238accf398400a3a2b5518314a38c461696c56f7f27f"
+      },
+      {
+        "id": "22386129-1cb0-411e-b4ab-f679832beadc",
+        "name": "окно.mp3",
+        "kind": "audio",
+        "mime": "audio/mpeg",
+        "bytes": 1024834,
+        "sha256": "9d685cb18f34a1370b8fd27817f29269e4c15630b84ae06d89fd576b70f052a8"
+      },
+      {
+        "id": "6e18cee8-ed64-4efa-bc49-50cfbd041729",
+        "name": "читательский билет.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1969377,
+        "sha256": "82f60490c70396e0399f61895a31e973c715fe52559e0224587d4211c34ed902"
+      },
+      {
+        "id": "4e104fad-8f47-4cec-8ff8-af0762cc552c",
+        "name": "визитка.png",
+        "kind": "image",
+        "mime": "image/png",
+        "bytes": 1842656,
+        "sha256": "44a35a8e49bd005683f286db86202e70f409d55887a0d53307fe77bc47a69600"
+      }
+    ],
+    "locations": [
+      {
+        "id": "apartment",
+        "name": "Квартира",
+        "notes": "Ваша собственная квартира.",
+        "rooms": [
+          {
+            "id": "room-main",
+            "origin": [
+              1.5,
+              0,
+              0
+            ],
+            "width": 3,
+            "depth": 4.75,
+            "height": 2.5,
+            "floorAssetId": "47953c55-4f18-4d9b-b41f-9a0f72edd3ea",
+            "wallAssetId": "d7d16666-3a24-4e6a-8169-75bc5d25bec5",
+            "ceilingAssetId": "2d604749-4360-49b5-99a9-4cfe03216650"
+          },
+          {
+            "id": "room-4ea435a8-56ec-479b-9618-e9d9dec33b54",
+            "origin": [
+              2,
+              0,
+              -2.75
+            ],
+            "width": 2,
+            "depth": 2.75,
+            "height": 2.5,
+            "floorAssetId": "47953c55-4f18-4d9b-b41f-9a0f72edd3ea",
+            "wallAssetId": "d7d16666-3a24-4e6a-8169-75bc5d25bec5",
+            "ceilingAssetId": "2d604749-4360-49b5-99a9-4cfe03216650"
+          },
+          {
+            "id": "room-ee183bc6-c262-4d92-9259-9d0f825f42ac",
+            "origin": [
+              1.5,
+              0,
+              -2
+            ],
+            "width": 0.5,
+            "depth": 1,
+            "height": 2.5,
+            "floorAssetId": "47953c55-4f18-4d9b-b41f-9a0f72edd3ea",
+            "wallAssetId": "d7d16666-3a24-4e6a-8169-75bc5d25bec5",
+            "ceilingAssetId": "2d604749-4360-49b5-99a9-4cfe03216650"
+          },
+          {
+            "id": "room-0d917e84-1b0f-4196-bf13-7ed04feb9102",
+            "origin": [
+              4,
+              0,
+              -2
+            ],
+            "width": 0.5,
+            "depth": 1,
+            "height": 2.5,
+            "floorAssetId": "47953c55-4f18-4d9b-b41f-9a0f72edd3ea",
+            "wallAssetId": "d7d16666-3a24-4e6a-8169-75bc5d25bec5",
+            "ceilingAssetId": "2d604749-4360-49b5-99a9-4cfe03216650"
+          },
+          {
+            "id": "room-49edb881-a40f-479e-8f27-0e1fc17308be",
+            "origin": [
+              4.5,
+              0,
+              -2.75
+            ],
+            "width": 3,
+            "depth": 2.5,
+            "height": 2.5,
+            "floorAssetId": "79c55c41-ed90-431e-9f67-697a2e3218ee",
+            "wallAssetId": "d7d16666-3a24-4e6a-8169-75bc5d25bec5",
+            "ceilingAssetId": "2d604749-4360-49b5-99a9-4cfe03216650"
+          },
+          {
+            "id": "room-c841a1e6-57ae-4d88-9cf3-79de2c33a076",
+            "origin": [
+              -1.25,
+              0,
+              -3
+            ],
+            "width": 2.75,
+            "depth": 2.75,
+            "height": 2.5,
+            "floorAssetId": "79c55c41-ed90-431e-9f67-697a2e3218ee",
+            "wallAssetId": "d7d16666-3a24-4e6a-8169-75bc5d25bec5",
+            "ceilingAssetId": "2d604749-4360-49b5-99a9-4cfe03216650"
+          }
+        ],
+        "spawn": {
+          "position": [
+            3,
+            1.65,
+            3.5
+          ],
+          "yaw": 0,
+          "pitch": 0
+        },
+        "audio": {
+          "musicAssetId": null,
+          "ambienceAssetId": "4957f663-0413-48d9-93ee-d2175d46ecd6",
+          "volume": 0.7
+        }
+      },
+      {
+        "id": "location-94bfe196-935b-4cab-8777-bcdcd7aedeb6",
+        "name": "Коридор",
+        "notes": "",
+        "rooms": [
+          {
+            "id": "room-431e08ab-fc62-42e5-8932-64c706dd776e",
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "width": 12,
+            "depth": 4,
+            "height": 2.8,
+            "floorAssetId": "47953c55-4f18-4d9b-b41f-9a0f72edd3ea",
+            "wallAssetId": null,
+            "ceilingAssetId": "2d604749-4360-49b5-99a9-4cfe03216650"
+          }
+        ],
+        "spawn": {
+          "position": [
+            5,
+            1.65,
+            3
+          ],
+          "yaw": 0,
+          "pitch": 0
+        },
+        "audio": {
+          "musicAssetId": null,
+          "ambienceAssetId": null,
+          "volume": 0.7
+        }
+      }
+    ],
+    "objects": [
+      {
+        "id": "object-17185ab1-872a-448d-9c07-27b59f50ad4b",
+        "name": "Дверь",
+        "locationId": "apartment",
+        "kind": "exit",
+        "notes": "Железная дверь. Краска давно пожелтела, и осела по краям.",
+        "tags": [],
+        "transform": {
+          "position": [
+            3,
+            0,
+            -2.5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1,
+            2.5,
+            1
+          ]
+        },
+        "imageAssetId": "f68cf2c6-781d-4d80-bcd3-61790d48c292",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": {
+            "type": "compare",
+            "source": "inventory",
+            "key": "item-6f5a3fe6-4a08-4eaa-8c78-1dbc3a345b69",
+            "operator": "gt",
+            "value": 0
+          },
+          "unavailableReason": "Дверь заперта.",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": {
+          "locationId": "location-94bfe196-935b-4cab-8777-bcdcd7aedeb6",
+          "position": [
+            5,
+            1.65,
+            3
+          ],
+          "yaw": 0
+        }
+      },
+      {
+        "id": "object-d19b6570-f16c-4f53-83a2-be8181b05866",
+        "name": "Плита",
+        "locationId": "apartment",
+        "kind": "container",
+        "notes": "Плита для приготовления еды.",
+        "tags": [],
+        "transform": {
+          "position": [
+            5.25,
+            0,
+            -0.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.5,
+            1.5,
+            1
+          ]
+        },
+        "imageAssetId": "eeafcc8b-11fc-4b27-9cf7-67b501edc20e",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": {
+          "capacity": 8,
+          "acceptedTags": []
+        },
+        "transition": null
+      },
+      {
+        "id": "object-9fc5b41e-ba04-494f-a16e-7fc9fee8621f",
+        "name": "Раковина",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "Раковина для мытья посуды.",
+        "tags": [],
+        "transform": {
+          "position": [
+            6,
+            0.5,
+            -2.65
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            1.5,
+            1.2,
+            1
+          ]
+        },
+        "imageAssetId": "f6840a4c-4149-417c-a082-6ba6b53051e9",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": "script-04af5917-9059-448c-a67e-826292953764",
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-c8afa805-4f2a-4b47-a74b-b1a09e4ebae0",
+        "name": "Шкаф",
+        "locationId": "apartment",
+        "kind": "container",
+        "notes": "Шкаф для хранения.",
+        "tags": [],
+        "transform": {
+          "position": [
+            6.75,
+            0,
+            -1
+          ],
+          "rotation": [
+            0,
+            0.7853981633974483,
+            0
+          ],
+          "scale": [
+            2.5,
+            2.5,
+            1
+          ]
+        },
+        "imageAssetId": "30f3ba51-246e-4f8c-9058-0c3a1b06cbe3",
+        "billboard": "none",
+        "collision": {
+          "solid": true,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": {
+          "capacity": 8,
+          "acceptedTags": []
+        },
+        "transition": null
+      },
+      {
+        "id": "object-45c87172-b8d3-4077-a303-9f8e4c30f682",
+        "name": "Ванна.",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "Ванна.",
+        "tags": [],
+        "transform": {
+          "position": [
+            0,
+            -0.25,
+            -0.38
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            2,
+            2,
+            1
+          ]
+        },
+        "imageAssetId": "535a6c96-dbe6-4a48-bb08-506c96db498f",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": "script-c1860230-11e9-44fb-9ffa-991f19ac3a65",
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-1796de2f-7c27-48a9-a845-de3fa96937bb",
+        "name": "Туалет",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            0.75,
+            0,
+            -2.75
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            2,
+            2,
+            1
+          ]
+        },
+        "imageAssetId": "150ccd10-bcbe-467a-bca4-c87805eddcb3",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": "script-1a8588bf-2ca2-4e6f-8da2-a8873e24058f",
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-136cc822-2ad4-4279-a608-febe4a6c96ca",
+        "name": "Раковина с зеркалом",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "Раковина, с зеркалом.",
+        "tags": [],
+        "transform": {
+          "position": [
+            -0.75,
+            0,
+            -2.6
+          ],
+          "rotation": [
+            0,
+            0.7853981633974483,
+            0
+          ],
+          "scale": [
+            2,
+            2.2,
+            1
+          ]
+        },
+        "imageAssetId": "fb056ffc-1183-48e0-90d6-d63d4ffd0471",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": "script-df0a83e3-5186-4f72-8219-4aebe09be01b",
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-62807354-639f-4cb0-ab08-7b092822f511",
+        "name": "Шкафчик",
+        "locationId": "apartment",
+        "kind": "container",
+        "notes": "Шкафчик",
+        "tags": [],
+        "transform": {
+          "position": [
+            -1.2,
+            1.25,
+            -1.5
+          ],
+          "rotation": [
+            0,
+            1.5707963267948966,
+            0
+          ],
+          "scale": [
+            0.75,
+            0.75,
+            1
+          ]
+        },
+        "imageAssetId": "edac4cac-0303-46e2-8a83-ab159968874a",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": "script-7456dae5-91ba-43af-8b10-0711613b9b29",
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": {
+          "capacity": 3,
+          "acceptedTags": []
+        },
+        "transition": null
+      },
+      {
+        "id": "object-e48a71e2-de69-4674-8adc-25e289a4398d",
+        "name": "Стол",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            1.75,
+            0,
+            0.75
+          ],
+          "rotation": [
+            0,
+            0.7853981633974483,
+            0
+          ],
+          "scale": [
+            1.2,
+            1.2,
+            1
+          ]
+        },
+        "imageAssetId": "903ea75a-0f2c-464a-a0c4-0d43d84f9907",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": {
+          "type": "compare",
+          "source": "flag",
+          "key": "read",
+          "operator": "eq",
+          "value": true
+        },
+        "interaction": {
+          "scriptId": "script-0aa65d4b-14c6-42ef-be64-63bfb0bf8ff2",
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-9712acf2-0ab3-4dbc-80f5-68598a8efd82",
+        "name": "Стул",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            2.25,
+            0,
+            0.75
+          ],
+          "rotation": [
+            0,
+            1.0471975511965976,
+            0
+          ],
+          "scale": [
+            0.9,
+            2,
+            1
+          ]
+        },
+        "imageAssetId": "8d267c8d-0e0a-4512-a4f5-a2c1fd53464c",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": {
+          "type": "compare",
+          "source": "inventory",
+          "key": "item-915eaca4-c097-4d48-8f0f-00e6afb1ef64",
+          "operator": "gt",
+          "value": 0
+        },
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-23691ce1-efae-44d2-9247-460d0c246516",
+        "name": "Кровать",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "Мягкая односпальная кровать. Подозрительно нормальная. Что-то в ней кажется... почти безопасным.",
+        "tags": [],
+        "transform": {
+          "position": [
+            3,
+            0,
+            4.6
+          ],
+          "rotation": [
+            0,
+            3.141592653589793,
+            0
+          ],
+          "scale": [
+            3,
+            1,
+            1
+          ]
+        },
+        "imageAssetId": "3136c164-9fd9-4b12-9d28-529c266065cc",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": "script-e337012e-603d-4382-a682-bc09eb7c8334",
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-2c56ed14-9610-4904-aae8-a559359e751b",
+        "name": "Стул_Рубашка",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "На вид возмутительно неудобный стул. На его спинке висит белая, помятая рубашка.",
+        "tags": [],
+        "transform": {
+          "position": [
+            2.25,
+            0,
+            0.75
+          ],
+          "rotation": [
+            0,
+            1.0471975511965976,
+            0
+          ],
+          "scale": [
+            0.9,
+            2,
+            1
+          ]
+        },
+        "imageAssetId": "40dc642c-ee3d-47ab-9e2a-28860809c11b",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": {
+          "type": "compare",
+          "source": "inventory",
+          "key": "item-915eaca4-c097-4d48-8f0f-00e6afb1ef64",
+          "operator": "lte",
+          "value": 0
+        },
+        "interaction": {
+          "scriptId": "script-319d6558-12d7-4366-b896-eae4529a4bc9",
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-71ff9cad-de90-4f75-a47a-f95f8de2f280",
+        "name": "Разбитая бутылка",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            4,
+            0.1,
+            2
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "3fd1b62d-bb9e-4354-ad86-f3b87ceacd3a",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-fdc50566-3454-4c4a-8219-c0991482e090",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-8ae2e88e-3db9-4fcb-8138-8a6f1ea8f001",
+        "name": "Разбитая бутылка",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            2,
+            0.1,
+            2.25
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "3fd1b62d-bb9e-4354-ad86-f3b87ceacd3a",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-fdc50566-3454-4c4a-8219-c0991482e090",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-0d3e8cac-410f-4311-996e-5b3f3aad20b7",
+        "name": "Разбитая бутылка",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            3.5,
+            0.1,
+            -1.25
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "3fd1b62d-bb9e-4354-ad86-f3b87ceacd3a",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-fdc50566-3454-4c4a-8219-c0991482e090",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-4fa0bdf4-11c5-489e-8567-eb7e7f3be664",
+        "name": "Мятая Бумага",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            3.25,
+            0.1,
+            1.25
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "scale": [
+            0.25,
+            0.25,
+            1
+          ]
+        },
+        "imageAssetId": "cad3fa92-59ce-45ae-967e-4e2517d3c7b9",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-af8ec41a-39d8-4d28-891f-f5bd9e2b5607",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-777235ad-36c1-403b-bd1b-daeb6e203ecc",
+        "name": "Мятая Бумага",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            2.25,
+            0.1,
+            1.5
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "scale": [
+            0.25,
+            0.25,
+            1
+          ]
+        },
+        "imageAssetId": "cad3fa92-59ce-45ae-967e-4e2517d3c7b9",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-af8ec41a-39d8-4d28-891f-f5bd9e2b5607",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-7f8d5c11-6134-4bcd-a845-c6c8e03eb639",
+        "name": "Мятая Бумага",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            2.25,
+            0.1,
+            3.25
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "scale": [
+            0.25,
+            0.25,
+            1
+          ]
+        },
+        "imageAssetId": "cad3fa92-59ce-45ae-967e-4e2517d3c7b9",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-af8ec41a-39d8-4d28-891f-f5bd9e2b5607",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-e820b240-e022-450b-88cc-e91c7169b5f4",
+        "name": "Мятая Бумага",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            4,
+            0.1,
+            3.75
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "scale": [
+            0.25,
+            0.25,
+            1
+          ]
+        },
+        "imageAssetId": "cad3fa92-59ce-45ae-967e-4e2517d3c7b9",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-af8ec41a-39d8-4d28-891f-f5bd9e2b5607",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-9e472985-1886-41b5-a180-1422b7948371",
+        "name": "Мятая Бумага",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            2.75,
+            0.1,
+            -0.5
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "scale": [
+            0.25,
+            0.25,
+            1
+          ]
+        },
+        "imageAssetId": "cad3fa92-59ce-45ae-967e-4e2517d3c7b9",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-af8ec41a-39d8-4d28-891f-f5bd9e2b5607",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-7549c6f4-2ea4-4e8a-82ca-be86c77dd22a",
+        "name": "Мятая Бумага",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            2.25,
+            0.1,
+            -1.5
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "scale": [
+            0.25,
+            0.25,
+            1
+          ]
+        },
+        "imageAssetId": "cad3fa92-59ce-45ae-967e-4e2517d3c7b9",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-af8ec41a-39d8-4d28-891f-f5bd9e2b5607",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-349ec8e9-8255-48b8-b530-3ba840a7b05d",
+        "name": "Мятая Бумага",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            3.5,
+            0.1,
+            -2.25
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "scale": [
+            0.25,
+            0.25,
+            1
+          ]
+        },
+        "imageAssetId": "cad3fa92-59ce-45ae-967e-4e2517d3c7b9",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-af8ec41a-39d8-4d28-891f-f5bd9e2b5607",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-303e425c-0d00-4c9f-b09c-f1d7ad4f0741",
+        "name": "Разбитая бутылка",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            3.25,
+            0.1,
+            4.2
+          ],
+          "rotation": [
+            0.7853981633974483,
+            0,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "77125a25-b788-4adf-90a7-cea5d4b9257c",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-17194795-3c51-414d-ad11-ae462cf49414",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-de29ea7f-6e50-457f-bdae-306e51f8b6a4",
+        "name": "Бутылка",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            3.25,
+            0.1,
+            2.5
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            0.7853981633974483
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "77125a25-b788-4adf-90a7-cea5d4b9257c",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-17194795-3c51-414d-ad11-ae462cf49414",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-550d0bea-97d1-4287-ba70-2155b90ab420",
+        "name": "Бутылка",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            4,
+            0.1,
+            0.25
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            1.9198621771937625
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "77125a25-b788-4adf-90a7-cea5d4b9257c",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-17194795-3c51-414d-ad11-ae462cf49414",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-f5ddc7aa-5c9d-4dfc-82a9-b1ff6926ce6e",
+        "name": "Бутылка",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            2.75,
+            0.1,
+            0.5
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            -0.4363323129985824
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "77125a25-b788-4adf-90a7-cea5d4b9257c",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-17194795-3c51-414d-ad11-ae462cf49414",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-3424bce0-cb00-4ca3-9430-66f9de7ef9bb",
+        "name": "Разбитая бутылка",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            0.5,
+            0.1,
+            -1
+          ],
+          "rotation": [
+            1.5707963267948966,
+            0,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "3fd1b62d-bb9e-4354-ad86-f3b87ceacd3a",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-fdc50566-3454-4c4a-8219-c0991482e090",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-602dcb0f-605a-49ae-841c-4e9b829fe093",
+        "name": "Разбитая бутылка (копия)",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            -1,
+            0.1,
+            -0.75
+          ],
+          "rotation": [
+            0.7853981633974483,
+            0,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "77125a25-b788-4adf-90a7-cea5d4b9257c",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-17194795-3c51-414d-ad11-ae462cf49414",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-cf0d0b6b-cc07-4b0b-bfcb-f410b6d9ede0",
+        "name": "Стол",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            1.75,
+            0,
+            0.75
+          ],
+          "rotation": [
+            0,
+            0.7853981633974483,
+            0
+          ],
+          "scale": [
+            1.2,
+            1.2,
+            1
+          ]
+        },
+        "imageAssetId": "9601199c-46ee-4d2a-8b18-ffb9fc8aa58b",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": {
+          "type": "compare",
+          "source": "flag",
+          "key": "read",
+          "operator": "eq",
+          "value": null
+        },
+        "interaction": {
+          "scriptId": "script-0aa65d4b-14c6-42ef-be64-63bfb0bf8ff2",
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-2f38a0ef-77bd-49f5-bec8-01be0f56ce64",
+        "name": "Мусоропровод",
+        "locationId": "location-94bfe196-935b-4cab-8777-bcdcd7aedeb6",
+        "kind": "prop",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            11.75,
+            0,
+            0.25
+          ],
+          "rotation": [
+            0,
+            -0.7853981633974483,
+            0
+          ],
+          "scale": [
+            3,
+            3,
+            1
+          ]
+        },
+        "imageAssetId": "21bf9923-0b2e-4cfd-91ed-c85f863c63e4",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-c0e13f21-d0e4-43ba-bc16-4e3038ac910f",
+        "name": "Картина",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "Картина какого-то дальнего родственника. ",
+        "tags": [],
+        "transform": {
+          "position": [
+            4.4,
+            1.25,
+            2.25
+          ],
+          "rotation": [
+            0,
+            1.5707963267948966,
+            0
+          ],
+          "scale": [
+            0.7,
+            1,
+            1
+          ]
+        },
+        "imageAssetId": "b4a4887f-2898-48c2-b150-76de05d8124c",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": "script-def5a56a-e9fb-450f-8c9e-805234a69c98",
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-4d477681-2961-4f99-9139-eb72fc18ed0f",
+        "name": "Икона",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "Икона некоего святого.",
+        "tags": [],
+        "transform": {
+          "position": [
+            4.25,
+            0,
+            0.25
+          ],
+          "rotation": [
+            -0.4363323129985824,
+            -0.6108652381980153,
+            -0.2617993877991494
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "760f5cab-0370-4a2a-9fba-9f3e13b23493",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": {
+          "type": "all",
+          "conditions": [
+            {
+              "type": "compare",
+              "source": "flag",
+              "key": "up_icon",
+              "operator": "eq",
+              "value": false
+            },
+            {
+              "type": "compare",
+              "source": "flag",
+              "key": "gone_icon",
+              "operator": "eq",
+              "value": false
+            }
+          ]
+        },
+        "interaction": {
+          "scriptId": "script-022a1341-a8d5-47e2-be3a-c4ef5d7b8398",
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-3c9d4036-d058-4696-9eab-9a29b61403c9",
+        "name": "Труба",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            7.4,
+            2,
+            -2
+          ],
+          "rotation": [
+            0,
+            1.5707963267948966,
+            0
+          ],
+          "scale": [
+            3.2,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "57ec8750-d1d3-4d69-90e7-03d577f763cd",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": {
+            "type": "literal",
+            "value": false
+          },
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-9f1c6c1b-664a-4344-a9de-6101905ec84a",
+        "name": "Брюки",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            5.25,
+            0.1,
+            -1
+          ],
+          "rotation": [
+            -1.5707963267948966,
+            -3.141592653589793,
+            0
+          ],
+          "scale": [
+            1,
+            1.5,
+            1
+          ]
+        },
+        "imageAssetId": "7b09d0a2-7788-4463-a611-426523a50d80",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": {
+          "type": "compare",
+          "source": "inventory",
+          "key": "item-3416acf1-e873-4b72-8bc5-fb0e023e408a",
+          "operator": "lte",
+          "value": 0
+        },
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-3416acf1-e873-4b72-8bc5-fb0e023e408a",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-68e95016-77e5-450b-93b6-f55fb04bab4a",
+        "name": "Туфли",
+        "locationId": "apartment",
+        "kind": "item",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            3.75,
+            0,
+            -2.25
+          ],
+          "rotation": [
+            0,
+            -0.5235987755982988,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "1c311282-6293-4df9-b8f8-e5f1676e67b6",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": {
+          "type": "compare",
+          "source": "inventory",
+          "key": "item-502588f0-d866-4f80-a255-26c627390e71",
+          "operator": "lte",
+          "value": 0
+        },
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": "item-502588f0-d866-4f80-a255-26c627390e71",
+          "canTake": true,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-d33721b5-9b96-4c38-a8a9-f0c9f7c521fd",
+        "name": "Икона",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "Икона некоего святого.",
+        "tags": [],
+        "transform": {
+          "position": [
+            4.25,
+            1.75,
+            0.25
+          ],
+          "rotation": [
+            0.4363323129985824,
+            -0.6108652381980153,
+            0.2617993877991494
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            1
+          ]
+        },
+        "imageAssetId": "481acf50-343a-43b8-83a6-a4b298961560",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": {
+          "type": "compare",
+          "source": "flag",
+          "key": "up_icon",
+          "operator": "eq",
+          "value": true
+        },
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      },
+      {
+        "id": "object-df33b555-f381-4c24-afe4-8010e55b21fd",
+        "name": "Дверт",
+        "locationId": "location-94bfe196-935b-4cab-8777-bcdcd7aedeb6",
+        "kind": "exit",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            5,
+            0,
+            3.75
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scale": [
+            2,
+            2,
+            1
+          ]
+        },
+        "imageAssetId": "f68cf2c6-781d-4d80-bcd3-61790d48c292",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": null,
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": {
+            "type": "compare",
+            "source": "inventory",
+            "key": "item-6f5a3fe6-4a08-4eaa-8c78-1dbc3a345b69",
+            "operator": "gt",
+            "value": 0
+          },
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": {
+          "locationId": "apartment",
+          "position": [
+            3,
+            1.65,
+            -2
+          ],
+          "yaw": 0
+        }
+      },
+      {
+        "id": "object-a5136356-4c58-4543-a56d-c54f348376e3",
+        "name": "Окно",
+        "locationId": "apartment",
+        "kind": "prop",
+        "notes": "",
+        "tags": [],
+        "transform": {
+          "position": [
+            1.6,
+            1,
+            3.5
+          ],
+          "rotation": [
+            0,
+            1.5707963267948966,
+            0
+          ],
+          "scale": [
+            1.5,
+            1.5,
+            1
+          ]
+        },
+        "imageAssetId": "d2108ed0-fa3c-473c-abab-ad70e6065a7e",
+        "billboard": "none",
+        "collision": {
+          "solid": false,
+          "radius": 0.25
+        },
+        "initialState": {},
+        "visibleWhen": null,
+        "interaction": {
+          "scriptId": "script-ed7c979b-3718-40ae-9973-f0bf988f3e85",
+          "itemDefinitionId": null,
+          "canTake": false,
+          "reach": 2,
+          "audioAssetId": null,
+          "showsTime": false,
+          "condition": null,
+          "unavailableReason": "",
+          "itemUseReason": "Эта вещь здесь не подходит."
+        },
+        "container": null,
+        "transition": null
+      }
+    ],
+    "items": [
+      {
+        "id": "item-915eaca4-c097-4d48-8f0f-00e6afb1ef64",
+        "name": "Рубашка",
+        "description": "Помятая рубашка. В ней вы выглядите подозрительно презентабельно. (+РАЗУМ) (+Убер-Эго)",
+        "tags": [],
+        "imageAssetId": "ff8f6f5b-718c-45f7-9859-7fc47afb5506",
+        "showsTime": false,
+        "equipmentSlot": "torso",
+        "capacityBonus": 0,
+        "modifiers": {
+          "skill-d8d2f316-1478-4bf7-aba1-6b1dce769113": 1,
+          "stat-8cab4fe6-418f-468a-b4fb-c9e11ed9a2e7": 1
+        }
+      },
+      {
+        "id": "item-fdc50566-3454-4c4a-8219-c0991482e090",
+        "name": "Разбитая бутылка",
+        "description": "Разбитая бутылка. Больше не применима к хранению жидкости.",
+        "tags": [
+          "мусор"
+        ],
+        "imageAssetId": "3fd1b62d-bb9e-4354-ad86-f3b87ceacd3a",
+        "showsTime": false,
+        "equipmentSlot": null,
+        "capacityBonus": 0,
+        "modifiers": {}
+      },
+      {
+        "id": "item-af8ec41a-39d8-4d28-891f-f5bd9e2b5607",
+        "name": "Мятая Бумага",
+        "description": "Комок мятой бумаги. Когда-то была использована и выброшена.",
+        "tags": [
+          "мусор"
+        ],
+        "imageAssetId": "cad3fa92-59ce-45ae-967e-4e2517d3c7b9",
+        "showsTime": false,
+        "equipmentSlot": null,
+        "capacityBonus": 0,
+        "modifiers": {}
+      },
+      {
+        "id": "item-17194795-3c51-414d-ad11-ae462cf49414",
+        "name": "Пустая Бутылка",
+        "description": "Пустая бутылка. На этикетке написано «Caleste»",
+        "tags": [
+          "мусор"
+        ],
+        "imageAssetId": "77125a25-b788-4adf-90a7-cea5d4b9257c",
+        "showsTime": false,
+        "equipmentSlot": null,
+        "capacityBonus": 0,
+        "modifiers": {}
+      },
+      {
+        "id": "item-550f8635-7df8-41ee-a45d-0f2c4a29ce3e",
+        "name": "Читательский билет",
+        "description": "Небольшая книжечка в тонкой кожаной обертке, которая указывает на то, что вы являетесь студентом Супербианского Университета. Она позволяет свободно брать книги из местной библиотеки.",
+        "tags": [],
+        "imageAssetId": "6e18cee8-ed64-4efa-bc49-50cfbd041729",
+        "showsTime": false,
+        "equipmentSlot": null,
+        "capacityBonus": 0,
+        "modifiers": {}
+      },
+      {
+        "id": "item-6f5a3fe6-4a08-4eaa-8c78-1dbc3a345b69",
+        "name": "Ключ",
+        "description": "Домашний ключ. По всей видимости, от вашей квартиры. Зубцы кажутся такими острыми, будто они готовы откусить от вас кусок.",
+        "tags": [],
+        "imageAssetId": "3adafbdb-6aab-413c-a831-8fdf70e6716c",
+        "showsTime": false,
+        "equipmentSlot": null,
+        "capacityBonus": 0,
+        "modifiers": {}
+      },
+      {
+        "id": "item-40c7857d-575a-445d-9bc0-23e6a8cd8807",
+        "name": "Карманные часы",
+        "description": "Странные карманные часы. Холодная, тяжелая латунь упрямо тянет вашу ладонь вниз. Кажется, от этой тяжести само время течет по другому...",
+        "tags": [],
+        "imageAssetId": "94f69584-7ba0-4496-b564-d218a5a16377",
+        "showsTime": true,
+        "equipmentSlot": null,
+        "capacityBonus": 0,
+        "modifiers": {}
+      },
+      {
+        "id": "item-c6574c1b-92b2-4efe-86f8-99c70f73a04a",
+        "name": "Портфель",
+        "description": "",
+        "tags": [],
+        "imageAssetId": null,
+        "showsTime": false,
+        "equipmentSlot": "accessory",
+        "capacityBonus": 3,
+        "modifiers": {
+          "skill-d8d2f316-1478-4bf7-aba1-6b1dce769113": 1
+        }
+      },
+      {
+        "id": "item-5c5675cf-67aa-48dc-9faa-b91c1256a7b2",
+        "name": "Визитка",
+        "description": "Визитка некоего аптекаря, который разместил свой бизнес на проспекте святого Паисия, дом 13. Также указан номер телеграфа по адресу Гарро-Вия, дом 26.",
+        "tags": [],
+        "imageAssetId": "4e104fad-8f47-4cec-8ff8-af0762cc552c",
+        "showsTime": false,
+        "equipmentSlot": null,
+        "capacityBonus": 0,
+        "modifiers": {}
+      },
+      {
+        "id": "item-8c5b2546-3951-433a-98dc-bb894b813916",
+        "name": "Баночка «Параколума»",
+        "description": "Небольшая медицинская баночка, с таблетками параколума внутри. Параколум - опиоидный препарат обезболивающего действия.",
+        "tags": [],
+        "imageAssetId": "e36b1e79-48eb-4167-9289-e8e44b662da5",
+        "showsTime": false,
+        "equipmentSlot": null,
+        "capacityBonus": 0,
+        "modifiers": {}
+      },
+      {
+        "id": "item-3416acf1-e873-4b72-8bc5-fb0e023e408a",
+        "name": "Брюки",
+        "description": "Довольно широкие брюки. В них достаточно просторно, чтобы пронести две бутылки вина.",
+        "tags": [],
+        "imageAssetId": "489d2698-980a-4167-9725-2a893ea00fcd",
+        "showsTime": false,
+        "equipmentSlot": "legs",
+        "capacityBonus": 1,
+        "modifiers": {}
+      },
+      {
+        "id": "item-502588f0-d866-4f80-a255-26c627390e71",
+        "name": "Туфли",
+        "description": "Обычные удобные туфли. Защитят ваши стопы от асфальта.",
+        "tags": [],
+        "imageAssetId": "d212d6be-aebb-44d6-8d2b-ad4bc8c52f37",
+        "showsTime": false,
+        "equipmentSlot": "feet",
+        "capacityBonus": 0,
+        "modifiers": {}
+      },
+      {
+        "id": "item-1f75c10a-d40d-4b65-9d95-52c615cc3551",
+        "name": "Мука",
+        "description": "Небольшой мешочек муки.",
+        "tags": [
+          "ингридиент"
+        ],
+        "imageAssetId": null,
+        "showsTime": false,
+        "equipmentSlot": null,
+        "capacityBonus": 0,
+        "modifiers": {}
+      },
+      {
+        "id": "item-0c04e031-50bb-4b97-80fd-576e54c07791",
+        "name": "Вода",
+        "description": "Небольшой бурдюк с водой.",
+        "tags": [
+          "ингридиент"
+        ],
+        "imageAssetId": null,
+        "showsTime": false,
+        "equipmentSlot": null,
+        "capacityBonus": 0,
+        "modifiers": {}
+      },
+      {
+        "id": "item-73da8a53-1e15-4330-9afb-0b02ad62787b",
+        "name": "Хлеб",
+        "description": "Кусочек хлеба",
+        "tags": [],
+        "imageAssetId": null,
+        "showsTime": false,
+        "equipmentSlot": null,
+        "capacityBonus": 0,
+        "modifiers": {}
+      }
+    ],
+    "character": {
+      "name": "...",
+      "stats": [
+        {
+          "id": "stat-8cab4fe6-418f-468a-b4fb-c9e11ed9a2e7",
+          "name": "РАЗУМ",
+          "initial": 1,
+          "min": 0,
+          "max": 10,
+          "description": "Ваш РАЗУМ. Нематериальное, эмпирическое, эмоциональное. Стремится к знаниям, самосовершенствованию, познанию мира.",
+          "barAssets": {
+            "frameAssetId": null,
+            "fillAssetId": null
+          }
+        },
+        {
+          "id": "stat-0fdce2d6-7757-4491-a081-1ac15c5ee9fc",
+          "name": "МАТЕРИЯ",
+          "initial": 5,
+          "min": 0,
+          "max": 10,
+          "description": "Ваша МАТЕРИЯ. Она физическая, механистическая, осознает мир через материальные органы чувств."
+        },
+        {
+          "id": "stat-8eb3a002-252d-41c3-8b82-7eda776dbbc3",
+          "name": "ПОТЕНЦИЯ",
+          "initial": 1,
+          "min": 0,
+          "max": 10,
+          "description": "Ваша ПОТЕНЦИЯ. Ваша способность к осуществлению замыслов. Материальная и мыслительная готовность к реализации действий."
+        }
+      ],
+      "skills": [
+        {
+          "id": "skill-bfb72caf-6fe4-4457-a5b8-03b594a7b1af",
+          "name": "«Оно»",
+          "initial": 1,
+          "min": 0,
+          "max": 10,
+          "description": "Нечто глубинное, не поддающееся объяснению, заложенное в самой варварской глубине человеческого самосознания. Подчиняется только законам природы, потакая инстинктам.",
+          "imageAssetId": "5c06595a-f745-4d2b-9ec0-ceeff2d007e5",
+          "imageVariants": []
+        },
+        {
+          "id": "skill-3bb54cd9-0db5-4243-871d-37b504d7523b",
+          "name": "«Эго»",
+          "initial": 1,
+          "min": 0,
+          "max": 10,
+          "description": "Это Вы. То, как вы понимаете собственное Я. Оно получает информацию, воспринимает мир, других людей, поглощает идеи. ",
+          "imageAssetId": "56077692-f208-4927-9dcd-02161a73ad84"
+        },
+        {
+          "id": "skill-d8d2f316-1478-4bf7-aba1-6b1dce769113",
+          "name": "«Убер-Эго»",
+          "initial": 1,
+          "min": 0,
+          "max": 10,
+          "description": "То, что стоит выше вас. Мораль. Закон. Слово божье. То, что управляет вами. То, к чему вы стремитесь. Оно рациональное, твердое, подчиненное логике. ",
+          "imageAssetId": "32e9c875-6d43-4f81-8d07-53c017a8ae32"
+        }
+      ],
+      "statuses": [
+        {
+          "id": "status-dd5589a2-139f-43b1-8e2e-634dfb01edd2",
+          "name": "Юноша",
+          "description": "Вы Юноша. Общество относится к вам соответственно.",
+          "initiallyActive": false,
+          "modifiers": {}
+        },
+        {
+          "id": "status-e8b2a38e-a7fb-4442-b1ad-7dac4214938b",
+          "name": "Девушка",
+          "description": "Вы Девушка. Общество относится к вам соответственно.",
+          "initiallyActive": false,
+          "modifiers": {}
+        }
+      ]
+    },
+    "flags": {
+      "awakened": false,
+      "stul_N": null,
+      "read": null,
+      "good_looking": false,
+      "bad_looking": false,
+      "pp": true,
+      "up_icon": false,
+      "gone_icon": false
+    },
+    "scripts": [
+      {
+        "id": "script-0ca99cfc-4880-4b6a-9856-f8fd6c09e31b",
+        "name": "Увертюра",
+        "entryNodeId": "node-48fb3762-795a-474a-946e-4c0436f6f284",
+        "nodes": [
+          {
+            "id": "node-48fb3762-795a-474a-946e-4c0436f6f284",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "...",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": "38cecc81-cc15-40aa-b1d5-8323d8dc6327",
+                "audioLoop": false,
+                "audioVolume": 0.5
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Пустота. Мягкая, тянущая, вязкая. Будто утопая нигде. Существуя... в ничем.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-04a6289b-0cd9-444c-8f82-40f69be5322a",
+                "label": "Да... тут так спокойно.",
+                "nextNodeId": "node-e40d3f55-4a19-4263-be2d-ef713c41f933",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-1cfd1fe6-d611-4b98-ac86-8d66b48acaaa",
+                "label": "Что? Я не хочу быть нигде.",
+                "nextNodeId": "node-53782ddd-2bf4-4c1e-95fb-339ab443c997",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-e40d3f55-4a19-4263-be2d-ef713c41f933",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Верно... тут нет никого, и ничего, что могло бы помешать твоему спокойствию. Нет срочных дел. Нет людей, которые тебя ненавидят. И... ",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-6d64c6b4-a3f1-4e68-8e6b-e2e959aec488",
+                "label": "Нет людей, которые меня любят...",
+                "nextNodeId": "node-5a163e06-7a04-4634-82f2-7bea5b2db15d",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-53782ddd-2bf4-4c1e-95fb-339ab443c997",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Почему? Ты впервые за долгое время по-настоящему отдыхаешь... ",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-457377d6-d7ff-45f8-9409-44f7d46d047e",
+                "label": "От чего?",
+                "nextNodeId": "node-ff912a66-9b7b-4aa2-b8e4-e7afe739cdb7",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-5a163e06-7a04-4634-82f2-7bea5b2db15d",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Верно. И их тут тоже нет. ",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-59b3cf2d-199c-4528-a17d-3534fa204fc4",
+                "label": "Я хочу их увидеть.",
+                "nextNodeId": "node-58088993-ed89-4147-9508-a4231e6cf455",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-ff912a66-9b7b-4aa2-b8e4-e7afe739cdb7",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Ты не помнишь. И правильно делаешь. ",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-2c2ac942-72d0-401c-9760-18389968b10d",
+                "label": "Я все равно хочу обратно!",
+                "nextNodeId": "node-d0374888-967f-4981-a059-1cf6ae3222b7",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-58088993-ed89-4147-9508-a4231e6cf455",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "...",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-fe7058e2-fd6d-49b0-9f96-140bef16a83b",
+                "label": "Продолжить",
+                "nextNodeId": "node-0725a041-845a-455b-bc90-27290e86f885",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-0725a041-845a-455b-bc90-27290e86f885",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Тогда ищи их.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-ae52e396-5a31-4723-89dc-71f3fecfbdc1",
+                "label": "Продолжить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-d0374888-967f-4981-a059-1cf6ae3222b7",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "...",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-8ce617a2-1f23-46ae-aac0-e25ce5687d8a",
+                "label": "Продолжить",
+                "nextNodeId": "node-38512768-b309-4b7b-89ff-59d4dcf597c0",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-38512768-b309-4b7b-89ff-59d4dcf597c0",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ТОГДА ПРОЧЬ",
+                    "marks": [
+                      "bold"
+                    ]
+                  }
+                ],
+                "audioAssetId": "d038b11e-92ef-453a-ae16-5cab300f66dd",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-c54cd57c-d89d-4907-acde-188d0524bb2e",
+                "label": "УЙТИ ПРОЧЬ",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "script-e337012e-603d-4382-a682-bc09eb7c8334",
+        "name": "Кровать",
+        "entryNodeId": "node-24da6d30-55d8-4036-97ad-e79e2cc9a377",
+        "nodes": [
+          {
+            "id": "node-24da6d30-55d8-4036-97ad-e79e2cc9a377",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы видите перед собой обычную кровать. По сравнению со всем остальным в квартире, она подозрительно чистая и обычная. Выглядит почти... безопасно.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-02e923e7-88c2-46cc-bbd7-546ec02de975",
+                "label": "Лечь спать",
+                "nextNodeId": null,
+                "condition": {
+                  "type": "compare",
+                  "source": "time",
+                  "key": "timeOfDaySeconds",
+                  "operator": "gt",
+                  "value": 71999
+                },
+                "unavailableReason": "Еще не время спать.",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "advanceTime",
+                    "seconds": 32400
+                  },
+                  {
+                    "type": "changeTrait",
+                    "kind": "stat",
+                    "traitId": "stat-8eb3a002-252d-41c3-8b82-7eda776dbbc3",
+                    "mode": "add",
+                    "value": 3
+                  }
+                ]
+              },
+              {
+                "id": "choice-60ad44b7-91b5-46ee-bb9f-996c42a8da87",
+                "label": "Отойти от кровати",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "script-319d6558-12d7-4366-b896-eae4529a4bc9",
+        "name": "Стул с Рубашкой",
+        "entryNodeId": "node-8d945ba3-31f9-4122-b424-a6ff54b3c824",
+        "nodes": [
+          {
+            "id": "node-8d945ba3-31f9-4122-b424-a6ff54b3c824",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы видите перед собой возмутительно неудобный стул. На его спинке неаккуратно развешана белая, помятая рубашка.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-0703fa56-2bb7-435e-8fde-a4d1af4d3753",
+                "label": "Никто не будет определять удобство за меня! (Сесть на стул)",
+                "nextNodeId": "node-914fe663-a831-46f5-856c-6abdf1a47c70",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": "check-5d6954b9-7712-4887-bd81-6028199cebb0",
+                "failureNodeId": "node-e1e24527-cc0a-45f3-a4fe-b218d886543c",
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-a4cd976e-f04b-4f52-a816-8fd86c7dac96",
+                "label": "Я доверюсь предчувствию. (Не садиться на стул)",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-4ebef008-e80e-4baa-8269-ade7cd09567c",
+                "label": "Забрать рубашку",
+                "nextNodeId": "node-ef9d4554-a42e-4243-988c-22ddacc4c240",
+                "condition": null,
+                "unavailableReason": "У вас уже есть рубашка.",
+                "checkId": null,
+                "usageLimit": {
+                  "period": "ever",
+                  "maxUses": 1,
+                  "seconds": 86400
+                },
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-e1e24527-cc0a-45f3-a4fe-b218d886543c",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы сели на возмутительно неудобный стул. К сожалению, вы не смогли стерпеть его неудобство. Ваша ",
+                    "marks": []
+                  },
+                  {
+                    "text": "МАТЕРИЯ ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "испытывает ",
+                    "marks": []
+                  },
+                  {
+                    "text": "АГОНИЮ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": ".",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-d12d5f57-8545-4a78-856f-5cd986b15bcb",
+                "label": "Закончить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "changeTrait",
+                    "kind": "stat",
+                    "traitId": "stat-0fdce2d6-7757-4491-a081-1ac15c5ee9fc",
+                    "mode": "add",
+                    "value": -1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node-914fe663-a831-46f5-856c-6abdf1a47c70",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ОНО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " Я ",
+                    "marks": []
+                  },
+                  {
+                    "text": "устал. Хочу присесть.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ono",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "К тому же, не такой уж он и неудобный...",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": true
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-937d72ff-9976-4206-9671-075d7b68b687",
+                "label": "Продолжить",
+                "nextNodeId": "node-c0da84da-f5f8-4efa-b2ab-db573e90815b",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-c0da84da-f5f8-4efa-b2ab-db573e90815b",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы сели на возмутительно неудобный стул. Нечто внутри вас подавило жалкие позывы встать с неудобного стула. Ваш ",
+                    "marks": []
+                  },
+                  {
+                    "text": "РАЗУМ ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "торжествует.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-8af22215-c306-42ce-ba1f-f6bd790d38fa",
+                "label": "Закончить.",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "changeTrait",
+                    "kind": "stat",
+                    "traitId": "stat-8cab4fe6-418f-468a-b4fb-c9e11ed9a2e7",
+                    "mode": "add",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node-ef9d4554-a42e-4243-988c-22ddacc4c240",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы взяли помятую рубашку в руки. Она выглядит на подозрение ",
+                    "marks": []
+                  },
+                  {
+                    "text": "презентабельно",
+                    "marks": [
+                      "italic"
+                    ]
+                  },
+                  {
+                    "text": ".",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-83d50727-9fdd-44cf-a04c-17c5ddce85b6",
+                "label": "Закончить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "giveItemOnce",
+                    "itemDefinitionId": "item-915eaca4-c097-4d48-8f0f-00e6afb1ef64",
+                    "rewardId": "reward-1b66322c-dd2e-4021-bf03-0930e4ef365e"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "script-0aa65d4b-14c6-42ef-be64-63bfb0bf8ff2",
+        "name": "Стол",
+        "entryNodeId": "node-8a9f1064-3d50-4731-b55d-815782af5585",
+        "nodes": [
+          {
+            "id": "node-8a9f1064-3d50-4731-b55d-815782af5585",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Стол вызывает у вас ",
+                    "marks": []
+                  },
+                  {
+                    "text": "ужас, ",
+                    "marks": [
+                      "italic"
+                    ]
+                  },
+                  {
+                    "text": "едва вам стоит взглянуть на него. Кипы разбросанных тут и там бумаг кажутся вам отдаленно знакомыми...",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-3855088e-8c71-4a9c-9dc4-cdba24abfe84",
+                "label": "Бросить попытки смотреть на стол",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-75afe23e-8365-473a-9574-02edbbccb25e",
+                "label": "Попытаться разобрать бумаги",
+                "nextNodeId": "node-396bdf5f-bc3b-416b-aa7c-3ecefb5a9d12",
+                "condition": {
+                  "type": "compare",
+                  "source": "flag",
+                  "key": "read",
+                  "operator": "eq",
+                  "value": null
+                },
+                "unavailableReason": "",
+                "checkId": "check-32501038-472d-406f-bd99-ce8a480d6e3b",
+                "failureNodeId": "node-3c5ae134-f19f-4a10-9b84-b15979b6ae6e",
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-396bdf5f-bc3b-416b-aa7c-3ecefb5a9d12",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "СУПЕР-ЭГО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "marks": []
+                  },
+                  {
+                    "text": "Нельзя оставлять столько мусора на столе. Ты как ",
+                    "marks": [
+                      "italic"
+                    ]
+                  },
+                  {
+                    "text": "свинья",
+                    "marks": [
+                      "bold",
+                      "italic"
+                    ]
+                  },
+                  {
+                    "text": ".",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "super-ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": true
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-3d87fe99-fb3c-4a26-880e-2df154ee4178",
+                "label": "Продолжить",
+                "nextNodeId": "node-82b615fa-be00-46db-bcdb-3ae1fb7aedf2",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "advanceTime",
+                    "seconds": 600
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node-82b615fa-be00-46db-bcdb-3ae1fb7aedf2",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы потратили на изучение бумаг около ",
+                    "marks": []
+                  },
+                  {
+                    "text": "десяти минут",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": ". Тут были разные проектные работы, эссе, записки...",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-4b34eaad-16d7-4557-8e25-c90d0e587448",
+                "label": "Продолжить",
+                "nextNodeId": "node-80e82273-8821-4d67-af2e-7ee5b29f671c",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-80e82273-8821-4d67-af2e-7ee5b29f671c",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Среди них вы нашли и свой читательский билет. Он давал понять, что вы являетесь студентом второго курса местного отделения ",
+                    "marks": []
+                  },
+                  {
+                    "text": "Супербианского Университета",
+                    "marks": [
+                      "italic"
+                    ]
+                  },
+                  {
+                    "text": ", чтобы это не значило.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-1ddef931-5a9e-4187-a19c-5588a12fb30d",
+                "label": "Закончить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "setFlag",
+                    "key": "read",
+                    "value": true
+                  },
+                  {
+                    "type": "giveItemOnce",
+                    "itemDefinitionId": "item-550f8635-7df8-41ee-a45d-0f2c4a29ce3e",
+                    "rewardId": "reward-9890c6d2-1b7f-41ac-b53b-373ddb8f02b0"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node-3c5ae134-f19f-4a10-9b84-b15979b6ae6e",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ОНО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Зачем нам разбирать эти бумаги? Мне так лень...",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ono",
+                "audioLoop": false,
+                "audioVolume": 0.9,
+                "audioStop": true
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Потратив некоторое время, вы поняли, что так и не смогли уловить суть написанного. Ваш ",
+                    "marks": []
+                  },
+                  {
+                    "text": "РАЗУМ ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "испытывает вину.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-645f5725-dad5-4a02-a671-9fad82a74b3b",
+                "label": "Смириться с поражением",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "changeTrait",
+                    "kind": "stat",
+                    "traitId": "stat-8cab4fe6-418f-468a-b4fb-c9e11ed9a2e7",
+                    "mode": "add",
+                    "value": -1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node-96d6f74a-1d87-4d39-89fd-a55e52b753ee",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": []
+          }
+        ]
+      },
+      {
+        "id": "script-df0a83e3-5186-4f72-8219-4aebe09be01b",
+        "name": "Раковина с зеркалом",
+        "entryNodeId": "node-0b4fff65-778b-4207-84b7-a90cdb74f710",
+        "nodes": [
+          {
+            "id": "node-0b4fff65-778b-4207-84b7-a90cdb74f710",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы подошли к мутной раковине, обустроенной отдельно от всего остального. Над ним висит странное зеркало.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "В нем можно увидеть самого себя.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Зеркало грязное. Нужно будет постараться, чтобы себя в нем рассмотреть.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-74930513-e811-4322-ba50-4668680b6484",
+                "label": "Попытаться разглядеть себя в зеркале",
+                "nextNodeId": "node-a52e9b4c-2e0a-4728-96de-c961c5e32631",
+                "condition": {
+                  "type": "any",
+                  "conditions": [
+                    {
+                      "type": "compare",
+                      "source": "check",
+                      "key": "check-2fc8197b-406e-4a50-8783-6201980fe1d0",
+                      "field": "attempts",
+                      "operator": "lte",
+                      "value": 0
+                    }
+                  ]
+                },
+                "unavailableReason": "Вы уже смотрели на себя в зеркало.",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-d8f64e37-07c9-45f6-976d-151e9a0c27a7",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-a52e9b4c-2e0a-4728-96de-c961c5e32631",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "С большим усилием, вы все же смогли посмотреть на себя. ",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Я оказался...",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-dcf199ad-d073-4c15-adf6-fbb7254d0cb1",
+                "label": "Юношей",
+                "nextNodeId": "node-9877976a-1717-438e-bccd-826cf0781199",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": "check-2fc8197b-406e-4a50-8783-6201980fe1d0",
+                "failureNodeId": "node-6cc1700e-831e-4f8f-93cd-697dbc4ddb93",
+                "failureActions": [
+                  {
+                    "type": "setStatus",
+                    "statusId": "status-dd5589a2-139f-43b1-8e2e-634dfb01edd2",
+                    "active": true
+                  }
+                ],
+                "actions": [
+                  {
+                    "type": "setStatus",
+                    "statusId": "status-dd5589a2-139f-43b1-8e2e-634dfb01edd2",
+                    "active": true
+                  }
+                ]
+              },
+              {
+                "id": "choice-72ac45a3-debd-48b4-a255-bc4e13e4fbb3",
+                "label": "Девушкой",
+                "nextNodeId": "node-265cf325-1663-4dcf-9cfe-d5d9b54f2ab3",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": "check-2fc8197b-406e-4a50-8783-6201980fe1d0",
+                "failureNodeId": "node-90dd1604-2141-4b48-9883-8e0bb922cf5d",
+                "failureActions": [
+                  {
+                    "type": "setStatus",
+                    "statusId": "status-e8b2a38e-a7fb-4442-b1ad-7dac4214938b",
+                    "active": true
+                  }
+                ],
+                "actions": [
+                  {
+                    "type": "setStatus",
+                    "statusId": "status-e8b2a38e-a7fb-4442-b1ad-7dac4214938b",
+                    "active": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node-9877976a-1717-438e-bccd-826cf0781199",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Нужно собрать себя по кусочкам...",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Да, вы оказались достаточно привлекательным молодым юношей. При ближайшем рассмотрении оказалось, что у вас довольно коротко спилены два клыка.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-ff21553f-4897-44b1-bfd1-5b948de334a2",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "setFlag",
+                    "key": "good_looking",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node-6cc1700e-831e-4f8f-93cd-697dbc4ddb93",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Слишком многое оказалось забыто...",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Вы оказались довольно болезненным юношей. Худое лицо, бледная кожа, и подозрительно короткие клыки.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-b6cf6ae7-719e-432c-8afd-e7cfd523204c",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "setFlag",
+                    "key": "bad_looking",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node-265cf325-1663-4dcf-9cfe-d5d9b54f2ab3",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "marks": []
+                  },
+                  {
+                    "text": "Нужно собрать себя по кусочкам...",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Да, вы оказались достаточно привлекательной молодой девушкой. При ближайшем рассмотрении оказалось, что у вас довольно коротко спилены два клыка.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-b79c6c02-cafe-4ef5-baf5-fb6964fcaa75",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "setFlag",
+                    "key": "good_looking",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node-90dd1604-2141-4b48-9883-8e0bb922cf5d",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "marks": []
+                  },
+                  {
+                    "text": "Слишком многое оказалось забыто...",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Вы оказались довольно болезненной девушкой. Худое лицо, бледная кожа, и подозрительно короткие клыки.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-7f41b1f3-6eb4-40f9-a9f6-56f376c9b255",
+                "label": "Завершить.",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "setFlag",
+                    "key": "bad_looking",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "script-1a8588bf-2ca2-4e6f-8da2-a8873e24058f",
+        "name": "Туалет",
+        "entryNodeId": "node-516b0ce5-4b3c-4e9c-b0f5-13708129e865",
+        "nodes": [
+          {
+            "id": "node-516b0ce5-4b3c-4e9c-b0f5-13708129e865",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Обычный унитаз. Если не обращать внимание на то, сколько лет он здесь служит.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ОНО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Нужда зовет.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ono",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-3116fb99-b065-42d5-91ec-50f6ce008aaf",
+                "label": "Справить нужду.",
+                "nextNodeId": "node-528d6360-364b-4953-bd06-be2136a90dcc",
+                "condition": {
+                  "type": "compare",
+                  "source": "flag",
+                  "key": "pp",
+                  "operator": "eq",
+                  "value": true
+                },
+                "unavailableReason": "Вы уже справили нужду.",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "setFlag",
+                    "key": "pp",
+                    "value": false
+                  }
+                ]
+              },
+              {
+                "id": "choice-75d91c2c-ee8b-4647-a4f0-8e36b08f08c1",
+                "label": "Отойти.",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-528d6360-364b-4953-bd06-be2136a90dcc",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы решили справить нужду. Приятное облегчение объяло ваше тело.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Однако, уже покончив с этим делом, вы обнаружили среди ржавчины странный кусок блеска, который вовсе не был похож на человеческие экскременты. ",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-a838c9df-ef93-4a56-9a2b-93bb27130a04",
+                "label": "Достать предмет",
+                "nextNodeId": "node-8ea57b35-330b-47ab-8eca-509d243ca297",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "giveItemOnce",
+                    "itemDefinitionId": "item-5c5675cf-67aa-48dc-9faa-b91c1256a7b2",
+                    "rewardId": "reward-51f03ade-81c0-40bc-851b-034eaf0a5551"
+                  }
+                ]
+              },
+              {
+                "id": "choice-742d7d0e-d07b-4f1f-9cf0-f1c6a837c3b0",
+                "label": "Да ни за что!",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-8ea57b35-330b-47ab-8eca-509d243ca297",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы достали блестящий предмет. Бакелитовая поверхность его, матовая и блестящая, была покрыта приятным белым цветом. Неаккуратным ручным подчерком было написано, что это - визитка.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-124d6fb3-d3cf-4a40-8b5a-d834264ecc0a",
+                "label": "Чья это визитка?",
+                "nextNodeId": "node-9e94eff3-e2da-4a46-94dc-3db1e36db2f8",
+                "condition": {
+                  "type": "any",
+                  "conditions": [
+                    {
+                      "type": "compare",
+                      "source": "status",
+                      "key": "status-dd5589a2-139f-43b1-8e2e-634dfb01edd2",
+                      "operator": "eq",
+                      "value": true
+                    }
+                  ]
+                },
+                "unavailableReason": "Вы не познали эту часть себя.",
+                "checkId": "check-a343dc31-dc96-4932-8c97-b276201321c0",
+                "failureNodeId": "node-e12b77a2-bd9f-40e3-a4a5-5ad93265ed9c",
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-fc9e5db8-4e7f-42a1-be9f-886e019db95a",
+                "label": "Чья это визитка?",
+                "nextNodeId": "node-4486c2ad-31c2-4855-8244-145cabb2e2a0",
+                "condition": {
+                  "type": "compare",
+                  "source": "status",
+                  "key": "status-e8b2a38e-a7fb-4442-b1ad-7dac4214938b",
+                  "operator": "eq",
+                  "value": true
+                },
+                "unavailableReason": "Вы не познали эту часть себя.",
+                "checkId": "check-a343dc31-dc96-4932-8c97-b276201321c0",
+                "failureNodeId": "node-992a5ad1-ff15-41a0-8cfa-4aac861d5535",
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-20b786c2-7092-4481-9112-16df186b7e93",
+                "label": "Положить визитку в карман.",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-9e94eff3-e2da-4a46-94dc-3db1e36db2f8",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Почерк... Фотография... Мы где-то уже все это видели. Худые скулы. Бледная кожа. Черные, пепельные волосы.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Вы узнаете на этой визитке ",
+                    "marks": []
+                  },
+                  {
+                    "text": "себя. ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Принадлежит она скромному аптекарю с инициалами А.М.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-f28ed542-a711-4a1a-a18f-f8e24a66166f",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-e12b77a2-bd9f-40e3-a4a5-5ad93265ed9c",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Закарючки выглядят незнакомыми... чужеродными.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Вам не удалось установить, кому принадлежит эта визитка. Вы поняли только, что ее владелец - аптекарь. На обороте заботливо обозначен адрес.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-1a81ee40-6abe-40fa-be61-6d8cda58905d",
+                "label": "Завершить.",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-4486c2ad-31c2-4855-8244-145cabb2e2a0",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "marks": []
+                  },
+                  {
+                    "text": "Почерк... Фотография... Мы где-то уже все это видели. Худые скулы. Бледная кожа. Черные, пепельные волосы.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Вы узнаете на этой визитке себя. Принадлежит она скромной аптекарше с инициалами А.М.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-35cc90c5-5280-4aea-838a-82b2a2a211b7",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-992a5ad1-ff15-41a0-8cfa-4aac861d5535",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "marks": []
+                  },
+                  {
+                    "text": "Закарючки выглядят незнакомыми... чужеродными.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Вам не удалось установить, кому принадлежит эта визитка. Вы поняли только, что ее владелец - аптекарь. На обороте заботливо обозначен адрес.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-13223277-ffc4-4786-95f1-cdb40ddb2abb",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "script-c1860230-11e9-44fb-9ffa-991f19ac3a65",
+        "name": "Ванна.",
+        "entryNodeId": "node-ce68fa30-bbe1-441d-969e-503edf34abbe",
+        "nodes": [
+          {
+            "id": "node-ce68fa30-bbe1-441d-969e-503edf34abbe",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Перед тобой ванная. Она странным образом изогнута по бокам, подобая пасти неизвестного зверя.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-9121679c-ea68-4bd4-849b-f00cd4e0b285",
+                "label": "Заглянуть в ванну",
+                "nextNodeId": "node-dfb44f4d-c7f5-4779-9b05-a0183e1d94f0",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "usageLimit": {
+                  "period": "ever",
+                  "maxUses": 1,
+                  "seconds": 86400
+                },
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-f75a9bc9-548c-47d1-b1fb-73d0aae7b836",
+                "label": "Попытаться набрать ванну",
+                "nextNodeId": "node-55bdcda2-b30b-4f91-9d0b-cb9b89a28c12",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "usageLimit": {
+                  "period": "day",
+                  "maxUses": 1,
+                  "seconds": 86400
+                },
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-5e1a717e-a5d2-42b9-831a-ea781b650977",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-dfb44f4d-c7f5-4779-9b05-a0183e1d94f0",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы заглянули в пустующую, ржавую пасть чугунного монстра.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Внутри вы увидели одинокую баночку, неизвестного вам происхождения.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-36957627-7914-48c9-958f-b575eebbceb2",
+                "label": "Потянуться за баночкой",
+                "nextNodeId": "node-100751a6-2882-4d45-a19c-fcb5c708b900",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "usageLimit": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-55bdcda2-b30b-4f91-9d0b-cb9b89a28c12",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Ванная наполнилась водой ржавого цвета примерно наполовину. Вода была едва теплой, но все равно лучше, чем холод во всей остальной квартире.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-2994c112-3d90-42d9-9404-9afd1860a598",
+                "label": "Принять ванну",
+                "nextNodeId": "node-4f6f8670-68ab-4830-82c2-b8f4306f0be1",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "usageLimit": {
+                  "period": "day",
+                  "maxUses": 1,
+                  "seconds": 86400
+                },
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-100751a6-2882-4d45-a19c-fcb5c708b900",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Открыв баночку, подозрительно напоминающую аптечную, вы обнаружили, что это действительно препарат, который называется «Параколум». К сожалению свойства его вы узнать не смогли.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-4041824a-5d01-44c5-86ec-f432ed0feab1",
+                "label": "Забрать банку",
+                "nextNodeId": "node-88bc1a9c-55dd-4734-9991-b57d9b2a96bc",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": "check-b1885d38-2c00-4efb-afe3-e9110349b698",
+                "failureNodeId": null,
+                "failureActions": [
+                  {
+                    "type": "giveItemOnce",
+                    "itemDefinitionId": "item-8c5b2546-3951-433a-98dc-bb894b813916",
+                    "rewardId": "reward-f40183be-22c6-4298-bfac-5ddbe6f8f02d"
+                  }
+                ],
+                "actions": [
+                  {
+                    "type": "giveItemOnce",
+                    "itemDefinitionId": "item-8c5b2546-3951-433a-98dc-bb894b813916",
+                    "rewardId": "reward-5665c61d-e27e-4beb-bd83-a3fd236b2ef0"
+                  }
+                ]
+              },
+              {
+                "id": "choice-23296467-b05c-48e7-a92c-1ffbaa1ccc13",
+                "label": "Оставить банку в покое",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-88bc1a9c-55dd-4734-9991-b57d9b2a96bc",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Параколум...",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ОНО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Звучит мягко. И тепло. Он утолял твою боль прежде. Теперь ты спасешь его от одиночества.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ono",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-291f7ee2-a80a-4d4a-80bb-a94c5db990b4",
+                "label": "Заврешить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-4f6f8670-68ab-4830-82c2-b8f4306f0be1",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Теплая вода обволакивает ваше тело. Вы медленно погружаетесь в легкую степень расслабления, когда понимаете, что вода уже остыла. Ваша ",
+                    "marks": []
+                  },
+                  {
+                    "text": "МАТЕРИЯ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " удовлетворена.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-45568876-8d37-4e71-bf8c-a8c24fa7d782",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "changeTrait",
+                    "kind": "stat",
+                    "traitId": "stat-0fdce2d6-7757-4491-a081-1ac15c5ee9fc",
+                    "mode": "add",
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "script-022a1341-a8d5-47e2-be3a-c4ef5d7b8398",
+        "name": "Икона",
+        "entryNodeId": "node-cadd4cec-c664-442e-a0f4-12f382f0e414",
+        "nodes": [
+          {
+            "id": "node-cadd4cec-c664-442e-a0f4-12f382f0e414",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Икона с изображением некоего святого. Почему-то расположена на полу.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Он выглядит... опечаленным.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "СУПЕР-ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Нельзя позволить иконе оставаться на полу. Это ",
+                    "marks": [
+                      "italic"
+                    ]
+                  },
+                  {
+                    "text": "богохульство.",
+                    "marks": [
+                      "bold",
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "super-ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-3400ef77-77d3-494b-9f41-84c62847bff2",
+                "label": "Повесить святого обратно.",
+                "nextNodeId": "node-14e84868-75ef-4111-a84e-dcefddd4d18d",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "setFlag",
+                    "key": "up_icon",
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "id": "choice-e1531017-8140-4b91-a884-3af8e1b45de4",
+                "label": "Оставить святого в одиночестве.",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-8ea7cf8d-554b-434b-8404-5eb2ed656f30",
+                "label": "Выкинуть икону.",
+                "nextNodeId": "node-ab8a7ee6-92a1-45fa-8288-93cab503f1f9",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "setFlag",
+                    "key": "gone_icon",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node-14e84868-75ef-4111-a84e-dcefddd4d18d",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы бережно подняли икону и повесили ее обратно на угловое крепление. Святой здесь выглядит чуть лучше.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-60c509b5-4a92-4e8b-b6c1-8eef528ebfc0",
+                "label": "Закончить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-ab8a7ee6-92a1-45fa-8288-93cab503f1f9",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы избавились от иконы, укрывшись от взгляда святого. ",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "СУПЕР-ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Но надолго ли?",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-799e8b4c-29f9-4b8f-8869-fc12dab4a5b4",
+                "label": "Закончить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "script-def5a56a-e9fb-450f-8c9e-805234a69c98",
+        "name": "Картина",
+        "entryNodeId": "node-dc676d53-6b42-4f4c-9402-9c3e2cdd2b1c",
+        "nodes": [
+          {
+            "id": "node-dc676d53-6b42-4f4c-9402-9c3e2cdd2b1c",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Перед вами картина. Она странным образом отличается своим богатством от остальной квартиры.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "На ней изображен благородный дворянин, напоказ демонстрирующий свои клыки и надменный взгляд.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Кажется, он смотрит вам прямо в душу. И недоволен тем, что видит.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "СУПЕР-ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Он недоволен нашим моральным разложением.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ОНО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Нашей слабостью.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ono",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Он хотел видеть кого-то другого.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-df8e2d8a-019f-4a4b-a65b-641870611d6b",
+                "label": "Протереть картину",
+                "nextNodeId": "node-2aea72e6-ac2c-41eb-a37e-b92a15d807bd",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-864f4fe4-f291-4be2-a028-6fe0e3d4dd14",
+                "label": "Оставить портрет в покое.",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-2aea72e6-ac2c-41eb-a37e-b92a15d807bd",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Ваша ладонь почти сразу покрылась устойчивым слоем пыли. К портрету давно не прикасались. Работа же была выполнена на редкость качественно: краска нигде не испортилась и не выцвела.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-59e6adae-3c97-437b-bd96-7849967b3351",
+                "label": "Попробовать понять, кто это.",
+                "nextNodeId": "node-088852ae-c4cf-48c3-b94a-64f99851b2d8",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": "check-ec5fdf4e-e2d6-4e29-b3fb-52738b6124ff",
+                "failureNodeId": "node-5ce355b3-a312-494c-aebe-09cf243c1adc",
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-fbeb304f-cdb1-49be-a2fb-e2d2c4c4cd2f",
+                "label": "Закончить с картиной.",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-088852ae-c4cf-48c3-b94a-64f99851b2d8",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Мы знаем, кто это.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Наш дед по линии матери. Морис Мортариум. В свое время он построил успешную военную службу. Погиб, как водится, где-то в окопе.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ОНО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "marks": [
+                      "bold",
+                      "italic"
+                    ]
+                  },
+                  {
+                    "text": "Он выглядит сильным.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ono",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "СУПЕР-ЭГО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "marks": []
+                  },
+                  {
+                    "text": "И он таким был.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "super-ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "marks": []
+                  },
+                  {
+                    "text": "А мы?..",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-8bab9277-592f-4b64-b0a2-5b07a37d5d83",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-5ce355b3-a312-494c-aebe-09cf243c1adc",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы поняли, что не можете понять, кто это. Но угадать причину его недовольства было несложно.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "СУПЕР-ЭГО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "marks": []
+                  },
+                  {
+                    "text": "За его спиной простирается мир. Прекрасный, романтический образ прошлого. Он же смотрит на нас. Своих потомков из будущего, для нас - настоящего.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "super-ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "СУПЕР-ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "И ему не нравится то, что он видит.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "super-ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ОНО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "На его фоне наши клыки ощущаются слишком короткими и тупыми. ",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ono",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-5c16d542-dc2a-46f9-85cd-8c0b32425271",
+                "label": "Завершить.",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "script-04af5917-9059-448c-a67e-826292953764",
+        "name": "Раковина",
+        "entryNodeId": "node-80b4ab33-d14b-453a-89ae-e46690547be9",
+        "nodes": [
+          {
+            "id": "node-80b4ab33-d14b-453a-89ae-e46690547be9",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Ржавая раковина. С виду кажется довольно бездонной.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Где-то в глубине трубы виднеется отблеск металла.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-149648e6-91ee-49c8-95ce-8ee48f33bc32",
+                "label": "Потянуться внутрь.",
+                "nextNodeId": "node-12b0744d-61d4-4560-b851-a204b41b1940",
+                "condition": {
+                  "type": "compare",
+                  "source": "inventory",
+                  "key": "item-6f5a3fe6-4a08-4eaa-8c78-1dbc3a345b69",
+                  "operator": "lte",
+                  "value": 0
+                },
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-4cb0494e-87ac-4759-9f60-3681fb5fa0dd",
+                "label": "Завершить.",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-12b0744d-61d4-4560-b851-a204b41b1940",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы сунули в раковину руку по локоть.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "С большим трудом вы достали... Ключ. Обычный старый ключ, который выглядит довольно острым.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-e55a7777-1f89-46be-ad2d-792fef6b9db4",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "giveItemOnce",
+                    "itemDefinitionId": "item-6f5a3fe6-4a08-4eaa-8c78-1dbc3a345b69",
+                    "rewardId": "reward-72223b72-aa59-400f-befb-835ea8f7480d"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "script-7456dae5-91ba-43af-8b10-0711613b9b29",
+        "name": "Шкафчик",
+        "entryNodeId": "node-46a3c346-be72-43a6-bf4f-cab1bb957633",
+        "nodes": [
+          {
+            "id": "node-46a3c346-be72-43a6-bf4f-cab1bb957633",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Шкафчик под действием влаги странно разбух, он кажется совершенно не подходящим для хранения вещей.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Тем не менее внутри вы обнаружили какие то бумаги и карманные часы.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-185b6b99-7d91-49fb-89e9-b96357aba04b",
+                "label": "Забрать часы.",
+                "nextNodeId": "node-46a3c346-be72-43a6-bf4f-cab1bb957633",
+                "condition": {
+                  "type": "compare",
+                  "source": "inventory",
+                  "key": "item-40c7857d-575a-445d-9bc0-23e6a8cd8807",
+                  "operator": "lte",
+                  "value": 0
+                },
+                "unavailableReason": "",
+                "checkId": null,
+                "usageLimit": {
+                  "period": "ever",
+                  "maxUses": 1,
+                  "seconds": 86400
+                },
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": [
+                  {
+                    "type": "giveItemOnce",
+                    "itemDefinitionId": "item-40c7857d-575a-445d-9bc0-23e6a8cd8807",
+                    "rewardId": "reward-aad72f70-3662-4bc7-aba0-3a6b8293c771"
+                  }
+                ]
+              },
+              {
+                "id": "choice-43983ec7-52c7-45f5-bd61-cbc41f536195",
+                "label": "Попытаться разобрать бумаги",
+                "nextNodeId": "node-124608ed-9ba1-413b-83ef-27bb989d0497",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": "check-239783ca-d3cd-4702-8347-e024f88a5c5f",
+                "usageLimit": null,
+                "failureNodeId": "node-58f603b8-85d3-4dc2-a607-66dcceee8b38",
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-bf1537d6-8031-4958-8ea5-6e1eb123c6ed",
+                "label": "Завершить.",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-124608ed-9ba1-413b-83ef-27bb989d0497",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "СУПЕР-ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Сосредоточься.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "super-ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "СУПЕР-ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "История болезни, некоего А.М. Он пережил операцию по спиливанию зубов.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "super-ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "СУПЕР-ЭГО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " Все бумаги - история болезни.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "super-ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ЭГО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Это... наше?",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-5a0e9a1d-87aa-4c77-ba8c-ba12c0db2946",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-58f603b8-85d3-4dc2-a607-66dcceee8b38",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Бумаги приведены в абсолютный беспорядок. Вам удалось выяснить лишь, что это - история болезни.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-d16d7a62-531f-47e7-9b50-f6de43923982",
+                "label": "Завершить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "script-ed7c979b-3718-40ae-9973-f0bf988f3e85",
+        "name": "Окно",
+        "entryNodeId": "node-c4480835-593a-4882-83c5-85997804fd94",
+        "nodes": [
+          {
+            "id": "node-c4480835-593a-4882-83c5-85997804fd94",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы выглядываете в окно как раз в момент, когда над вашей квартирой проносится монорельс.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": "22386129-1cb0-411e-b4ab-f679832beadc",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Железный монстр несется вперед, пока за ним тянется черный след из клубов дыма. ",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Кошка, мирно спавшая на рельсах, спрыгнула вниз. Приземлилась в мусорный бак у какого-то заведения.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Бак перевернулся. Разгневанный хозяин заведения, коренастый старичок, тщетно пытался преследовать виновницу.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-6a779507-e432-4810-aedd-e9037615d214",
+                "label": "Присмотреться к зданиям",
+                "nextNodeId": "node-ebb09617-5a9a-4b31-80ca-6ff30bfc8780",
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": "check-799a9944-b943-4153-90fa-061f6eb582e4",
+                "usageLimit": {
+                  "period": "ever",
+                  "maxUses": 1,
+                  "seconds": 86400
+                },
+                "failureNodeId": "node-d34de10f-b633-4d3d-9cda-fc6077e9940f",
+                "failureActions": [],
+                "actions": []
+              },
+              {
+                "id": "choice-012c0ef6-cb19-4852-a6fa-0bcf7264bc5a",
+                "label": "Закончить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-ebb09617-5a9a-4b31-80ca-6ff30bfc8780",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Вы внимательнее взглянули наружу. Здания кажутся вам отдаленно знакомыми.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "СУПЕР-ЭГО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "marks": []
+                  },
+                  {
+                    "text": "Конечно, они нам знакомы. Мы не можем не знать этого, как один из жителей этого города.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "super-ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              },
+              {
+                "spans": [
+                  {
+                    "text": "По центру расположена военная академия. Монументальное здание, ныне доживающее свои последние дни в мире пост-беллум.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Левее - собор имени святого Паисия. ",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Правее - мертвые районы. Безмолвные трубы уже не кашляют черными клубами дыма.",
+                    "marks": []
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "СУПЕР-ЭГО:",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "marks": []
+                  },
+                  {
+                    "text": "Весь город ",
+                    "marks": [
+                      "italic"
+                    ]
+                  },
+                  {
+                    "text": "молчит",
+                    "marks": [
+                      "bold",
+                      "italic"
+                    ]
+                  },
+                  {
+                    "text": ".",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "super-ego",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-81ce2f83-bf29-4804-8994-30a14e726ab1",
+                "label": "Закончить.",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          },
+          {
+            "id": "node-d34de10f-b633-4d3d-9cda-fc6077e9940f",
+            "paragraphs": [
+              {
+                "spans": [
+                  {
+                    "text": "Здания выглядят странно.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Узкие, высокие, нависающие и тянущиеся друг к другу. Узкие улочки образуют тонкие коридоры, зачастую перекрытые полотнами ткани, прежде защищавшие жителей от жары.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "Но сейчас трубы промышленных гигантов молчат. Огни монументальных зданий не горят. Колокола собора больше не звенят.",
+                    "marks": [
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "audioLoop": false,
+                "audioVolume": 1
+              },
+              {
+                "spans": [
+                  {
+                    "text": "ОНО: ",
+                    "marks": [
+                      "bold"
+                    ]
+                  },
+                  {
+                    "text": "Город ",
+                    "marks": [
+                      "italic"
+                    ]
+                  },
+                  {
+                    "text": "умер.",
+                    "marks": [
+                      "bold",
+                      "italic"
+                    ]
+                  }
+                ],
+                "audioAssetId": null,
+                "voiceId": "ono",
+                "audioLoop": false,
+                "audioVolume": 1,
+                "audioStop": false
+              }
+            ],
+            "choices": [
+              {
+                "id": "choice-ea6e55b4-5b11-4a41-9f7e-710e6c081b46",
+                "label": "Закончить",
+                "nextNodeId": null,
+                "condition": null,
+                "unavailableReason": "",
+                "checkId": null,
+                "failureNodeId": null,
+                "failureActions": [],
+                "actions": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "rules": [
+      {
+        "id": "rule-a1b30c04-3f5d-4491-ac13-690073249037",
+        "name": "Мусор в мусоропровод",
+        "trigger": "useItem",
+        "targetObjectId": "object-2f38a0ef-77bd-49f5-bec8-01be0f56ce64",
+        "checkId": null,
+        "itemDefinitionId": null,
+        "itemTag": "мусор",
+        "priority": 0,
+        "condition": null,
+        "unavailableReason": "Это не мусор.",
+        "actions": [],
+        "once": false
+      },
+      {
+        "id": "rule-554f81ee-61f8-4d1e-bde2-873e14fe34b3",
+        "name": "Новая реакция",
+        "trigger": "interact",
+        "targetObjectId": null,
+        "checkId": null,
+        "itemDefinitionId": null,
+        "itemTag": null,
+        "priority": 0,
+        "condition": null,
+        "unavailableReason": "",
+        "actions": [],
+        "once": false
+      }
+    ],
+    "checks": [
+      {
+        "id": "check-5d6954b9-7712-4887-bd81-6028199cebb0",
+        "name": "Стул",
+        "skillId": "skill-bfb72caf-6fe4-4457-a5b8-03b594a7b1af",
+        "statId": null,
+        "difficulty": 10,
+        "repeatable": true,
+        "retryWhen": {
+          "type": "compare",
+          "source": "skill",
+          "key": "skill-bfb72caf-6fe4-4457-a5b8-03b594a7b1af",
+          "operator": "gt",
+          "value": 7
+        },
+        "retryReason": "Вам не хватает ХРАРОСТИ чтобы попробовать снова.",
+        "maxAttempts": 2
+      },
+      {
+        "id": "check-32501038-472d-406f-bd99-ce8a480d6e3b",
+        "name": "Стол_бумага",
+        "skillId": "skill-d8d2f316-1478-4bf7-aba1-6b1dce769113",
+        "statId": "stat-8cab4fe6-418f-468a-b4fb-c9e11ed9a2e7",
+        "difficulty": 11,
+        "repeatable": false,
+        "retryWhen": null,
+        "retryReason": "",
+        "maxAttempts": null
+      },
+      {
+        "id": "check-2fc8197b-406e-4a50-8783-6201980fe1d0",
+        "name": "Красота",
+        "skillId": "skill-3bb54cd9-0db5-4243-871d-37b504d7523b",
+        "statId": null,
+        "difficulty": 10,
+        "repeatable": false,
+        "retryWhen": null,
+        "retryReason": "",
+        "maxAttempts": null
+      },
+      {
+        "id": "check-2be8b0c3-fb6a-4cae-ab3f-8e2a6d73eb0f",
+        "name": "Красота (копия)",
+        "skillId": "skill-3bb54cd9-0db5-4243-871d-37b504d7523b",
+        "statId": null,
+        "difficulty": 10,
+        "repeatable": false,
+        "retryWhen": null,
+        "retryReason": "",
+        "maxAttempts": null
+      },
+      {
+        "id": "check-a343dc31-dc96-4932-8c97-b276201321c0",
+        "name": "Визитка",
+        "skillId": "skill-3bb54cd9-0db5-4243-871d-37b504d7523b",
+        "statId": "stat-8cab4fe6-418f-468a-b4fb-c9e11ed9a2e7",
+        "difficulty": 15,
+        "repeatable": true,
+        "retryWhen": {
+          "type": "compare",
+          "source": "skill",
+          "key": "skill-3bb54cd9-0db5-4243-871d-37b504d7523b",
+          "operator": "gt",
+          "value": 5
+        },
+        "retryReason": "",
+        "maxAttempts": null
+      },
+      {
+        "id": "check-b1885d38-2c00-4efb-afe3-e9110349b698",
+        "name": "Параколум",
+        "skillId": "skill-bfb72caf-6fe4-4457-a5b8-03b594a7b1af",
+        "statId": null,
+        "difficulty": 12,
+        "repeatable": true,
+        "retryWhen": null,
+        "retryReason": "",
+        "maxAttempts": null,
+        "retryGrowth": {
+          "skillId": "skill-bfb72caf-6fe4-4457-a5b8-03b594a7b1af",
+          "reference": "last",
+          "attempt": 1
+        }
+      },
+      {
+        "id": "check-ec5fdf4e-e2d6-4e29-b3fb-52738b6124ff",
+        "name": "Попробовать понять, кто это.",
+        "skillId": "skill-3bb54cd9-0db5-4243-871d-37b504d7523b",
+        "statId": null,
+        "difficulty": 10.25,
+        "repeatable": false,
+        "retryWhen": null,
+        "retryReason": "",
+        "maxAttempts": null,
+        "formula": {
+          "mode": "dice",
+          "dieSides": 20,
+          "skillWeight": 1,
+          "statWeight": 1
+        }
+      },
+      {
+        "id": "check-239783ca-d3cd-4702-8347-e024f88a5c5f",
+        "name": "Попытаться разобрать бумаги",
+        "skillId": "skill-d8d2f316-1478-4bf7-aba1-6b1dce769113",
+        "statId": null,
+        "difficulty": 12,
+        "repeatable": true,
+        "retryWhen": null,
+        "retryReason": "",
+        "maxAttempts": null,
+        "formula": {
+          "mode": "dice",
+          "dieSides": 20,
+          "skillWeight": 1,
+          "statWeight": 1
+        },
+        "retryGrowth": {
+          "skillId": "skill-d8d2f316-1478-4bf7-aba1-6b1dce769113",
+          "reference": "last",
+          "attempt": 1
+        }
+      },
+      {
+        "id": "check-799a9944-b943-4153-90fa-061f6eb582e4",
+        "name": "Присмотреться к зданиям",
+        "skillId": "skill-d8d2f316-1478-4bf7-aba1-6b1dce769113",
+        "statId": "stat-8cab4fe6-418f-468a-b4fb-c9e11ed9a2e7",
+        "difficulty": 11.75,
+        "repeatable": true,
+        "retryWhen": null,
+        "retryReason": "",
+        "maxAttempts": null,
+        "formula": {
+          "mode": "dice",
+          "dieSides": 20,
+          "skillWeight": 1,
+          "statWeight": 1
+        },
+        "retryGrowth": {
+          "skillId": "skill-d8d2f316-1478-4bf7-aba1-6b1dce769113",
+          "reference": "last",
+          "attempt": 1
+        }
+      }
+    ],
+    "quests": [],
+    "recipes": [
+      {
+        "id": "recipe-40329495-218b-48a3-a8b2-7f96d1899688",
+        "name": "Хлеб",
+        "ingredientTags": [
+          "ингредиент"
+        ],
+        "resultItemId": "item-73da8a53-1e15-4330-9afb-0b02ad62787b",
+        "durationSeconds": 0,
+        "condition": null,
+        "containerObjectId": "object-d19b6570-f16c-4f53-83a2-be8181b05866",
+        "allowExtraIngredients": false,
+        "unavailableReason": ""
+      }
+    ],
+    "timers": [],
+    "schedules": []
+  }
+}

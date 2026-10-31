@@ -1,0 +1,34 @@
+[
+  {
+    "file": "01.wav",
+    "source": "оно1.m4a",
+    "source_sha256": "d637b291538788a49d60b0f70ceda545e8b4db60a0b72be0b46cfd8fbb1cde8c",
+    "startSeconds": 0.21,
+    "duration": 0.2,
+    "peak": 0.2714
+  },
+  {
+    "file": "02.wav",
+    "source": "оно2.m4a",
+    "source_sha256": "97e65ca43be60cf554805a4f33561aa3ab5059910ae207f62a43e9bb751660c3",
+    "startSeconds": 0.19,
+    "duration": 0.2,
+    "peak": 0.3534
+  },
+  {
+    "file": "03.wav",
+    "source": "оно3.m4a",
+    "source_sha256": "6be8222536652cbc14dad76bd27bb49f4835424e94c58e043e5f81ef462ce13b",
+    "startSeconds": 0.18,
+    "duration": 0.2,
+    "peak": 0.2908
+  },
+  {
+    "file": "04.wav",
+    "source": "оно4.m4a",
+    "source_sha256": "bff0fc166c543bc351254ddcbb860ad980976345d2864d94a747b4fd773efd88",
+    "startSeconds": 0.34,
+    "duration": 0.2,
+    "peak": 0.2414
+  }
+]

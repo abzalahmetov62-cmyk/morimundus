@@ -1,0 +1,56 @@
+{
+  "format": "morimundus-source-snapshot",
+  "version": 1,
+  "exportedAt": "2026-10-31T20:23:14.571843+00:00",
+  "source": {
+    "sitesProjectId": "appgprj_6ac67642dea08191afd1f3fa6b770d81",
+    "commit": "df3e20f8780a920737ebb104235f82037a824c35",
+    "siteVersion": 35
+  },
+  "author": {
+    "source": "Morimundus-2026-10-31.rar / Morimundus-2026-10-31.json",
+    "archiveSHA256": "f951540969c9f4720db215cfacba5d06896f6982d7a6a39e3ba211073bb363bf",
+    "liveRevisionObserved": 168,
+    "liveUpdatedAtObserved": "2026-10-26T15:03:11.608Z",
+    "liveDocumentPrefixMatches": true,
+    "liveDocumentPrefixCharacters": 1745,
+    "liveAssetMetadataMatches": true,
+    "liveDocumentFullyCompared": false,
+    "restoredRevision": 1
+  },
+  "published": {
+    "revision": 8,
+    "authorRevision": 150,
+    "publishedAt": "2026-10-23T11:06:52.142Z",
+    "fingerprint": "195fa678912ef4cb86de2c249f2c8d04320a16ee7f4af0ee998fd2ded6472ce3"
+  },
+  "counts": {
+    "sourceFiles": 335,
+    "assets": 62,
+    "assetBytes": 146272764,
+    "scripts": 13,
+    "locations": 2
+  },
+  "verification": {
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "scenarioChecks": 22,
+    "saveChecks": 19,
+    "assetSHA256": "all passed",
+    "seedSQL": "passed against fresh SQLite with tracked migrations",
+    "projectSchemas": "author and publication passed"
+  },
+  "excluded": [
+    "environment files and secret values",
+    "author account bindings",
+    "player saves",
+    "local runtime and cache directories",
+    "generated build output",
+    "unreferenced/deleted asset records"
+  ],
+  "assetStorage": {
+    "originalFiles": 61,
+    "losslessGzipFiles": 1,
+    "reason": "The GitHub connector rejected the uncompressed 13 MB WAV payload; gzip preserves its exact original bytes."
+  }
+}
